@@ -1,0 +1,137 @@
+"""52 character presets (13 archetypes x 4 variants), each with male + female versions.
+
+Fields: torso, legs, head (style + primary/secondary ramps), cape, weapon,
+offhand, hair styles per sex, hair color, accessory per sex, skin per sex.
+"""
+
+def P(id, cls, name, torso, legs, head, hair, hair_color, weapon, offhand=None,
+      cape=None, acc=(None, None), skins=('skin_light', 'skin_tan')):
+    return dict(id=id, cls=cls, name=name,
+                torso=torso, legs=legs, head=head, cape=cape,
+                hair={'male': hair[0], 'female': hair[1]}, hair_color=hair_color,
+                weapon=weapon, offhand=offhand,
+                acc={'male': acc[0], 'female': acc[1]},
+                skin={'male': skins[0], 'female': skins[1]})
+
+# style tuples: (style, primary, secondary)
+PRESETS = [
+    # ---------------- Warriors
+    P('warrior_mercenary', 'Warrior', 'Mercenary', ('tunic', 'cloth_red', 'cloth_yellow'), ('boots', 'cloth_brown', 'leather'), None,
+      ('short', 'ponytail'), 'hair_brown', 'sword', 'round_shield', acc=('beard', None), skins=('skin_tan', 'skin_light')),
+    P('warrior_berserker', 'Warrior', 'Berserker', ('leather', 'cloth_red', 'cloth_brown'), ('pants', 'cloth_brown', 'leather'), ('viking_helm', 'cloth_gray', 'cloth_gray'),
+      ('long', 'braids'), 'hair_red', 'axe', None, acc=('beard', None), skins=('skin_porcelain', 'skin_light')),
+    P('warrior_gladiator', 'Warrior', 'Gladiator', ('tunic', 'cloth_crimson', 'cloth_yellow'), ('shorts', 'cloth_crimson', 'leather'), None,
+      ('bald', 'bun'), 'hair_black', 'spear', 'buckler', skins=('skin_brown', 'skin_deep')),
+    P('warrior_ronin', 'Warrior', 'Ronin', ('tunic', 'cloth_navy', 'cloth_white'), ('pants', 'cloth_black', 'leather'), ('bandana', 'cloth_white', 'cloth_white'),
+      ('ponytail', 'ponytail'), 'hair_black', 'greatsword', None, skins=('skin_light', 'skin_porcelain')),
+    # ---------------- Knights
+    P('knight_paladin', 'Knight', 'Paladin', ('plate', 'cloth_white', 'cloth_yellow'), ('greaves', 'cloth_white', 'cloth_white'), ('knight_helm', 'cloth_yellow', 'cloth_yellow'),
+      ('short', 'long'), 'hair_blonde', 'hammer', 'kite_shield', cape='cape', skins=('skin_light', 'skin_porcelain')),
+    P('knight_royal_guard', 'Knight', 'Royal Guard', ('plate', 'cloth_blue', 'cloth_yellow'), ('greaves', 'cloth_blue', 'cloth_blue'), ('knight_helm', 'cloth_blue', 'cloth_blue'),
+      ('short', 'bob'), 'hair_brown', 'sword', 'kite_shield', cape='cape', skins=('skin_olive', 'skin_tan')),
+    P('knight_black', 'Knight', 'Black Knight', ('plate', 'cloth_black', 'cloth_crimson'), ('greaves', 'cloth_black', 'cloth_black'), ('knight_helm', 'cloth_crimson', 'cloth_crimson'),
+      ('short', 'long'), 'hair_black', 'greatsword', None, cape='tattered_cape', skins=('skin_porcelain', 'skin_light')),
+    P('knight_squire', 'Knight', 'Squire', ('chainmail', 'cloth_green', 'cloth_yellow'), ('boots', 'cloth_brown', 'leather'), None,
+      ('sidepart', 'bob'), 'hair_blonde', 'sword', 'buckler', skins=('skin_light', 'skin_brown')),
+    # ---------------- Rangers
+    P('ranger_woodland', 'Ranger', 'Woodland Ranger', ('leather', 'cloth_green', 'cloth_forest'), ('boots', 'cloth_forest', 'leather'), ('feather_hat', 'cloth_forest', 'cloth_red'),
+      ('short', 'ponytail'), 'hair_brown', 'bow', None, cape='cape', skins=('skin_tan', 'skin_light')),
+    P('ranger_hunter', 'Ranger', 'Hunter', ('leather', 'cloth_brown', 'cloth_tan'), ('pants', 'cloth_brown', 'leather'), ('hood', 'cloth_forest', 'cloth_forest'),
+      ('short', 'braids'), 'hair_red', 'crossbow', None, acc=('beard', None), skins=('skin_porcelain', 'skin_olive')),
+    P('ranger_elf_scout', 'Ranger', 'Elf Scout', ('tunic', 'cloth_teal', 'cloth_yellow'), ('boots', 'cloth_teal', 'leather'), ('circlet', 'cloth_teal', 'emerald'),
+      ('long', 'long'), 'hair_silver', 'bow', None, skins=('skin_light', 'skin_porcelain')),
+    P('ranger_beastmaster', 'Ranger', 'Beastmaster', ('leather', 'cloth_orange', 'cloth_brown'), ('shorts', 'cloth_brown', 'leather'), None,
+      ('mohawk', 'pigtails'), 'hair_black', 'spear', None, skins=('skin_deep', 'skin_brown')),
+    # ---------------- Rogues
+    P('rogue_thief', 'Rogue', 'Thief', ('hooded_cloak', 'cloth_gray', 'cloth_black'), ('pants', 'cloth_black', 'leather'), None,
+      ('short', 'bob'), 'hair_black', 'dagger', None, acc=('mask', 'mask'), skins=('skin_light', 'skin_tan')),
+    P('rogue_assassin', 'Rogue', 'Assassin', ('leather', 'cloth_crimson', 'cloth_black'), ('boots', 'cloth_black', 'leather_dark'), ('hood', 'cloth_black', 'cloth_black'),
+      ('short', 'long'), 'hair_black', 'dagger', None, acc=('mask', 'mask'), skins=('skin_olive', 'skin_porcelain')),
+    P('rogue_bandit', 'Rogue', 'Bandit', ('leather', 'cloth_red', 'cloth_tan'), ('pants', 'cloth_tan', 'leather'), ('bandana', 'cloth_red', 'cloth_red'),
+      ('short', 'ponytail'), 'hair_brown', 'cutlass', None, acc=('beard', None), skins=('skin_tan', 'skin_brown')),
+    P('rogue_shadowblade', 'Rogue', 'Shadowblade', ('hooded_cloak', 'cloth_purple', 'cloth_black'), ('boots', 'cloth_black', 'leather_dark'), None,
+      ('spiky', 'sidepart'), 'hair_silver', 'katana', None, cape='tattered_cape', skins=('skin_porcelain', 'skin_deep')),
+    # ---------------- Mages
+    P('mage_wizard', 'Mage', 'Wizard', ('robe', 'cloth_blue', 'cloth_yellow'), ('robe', 'leather', 'leather'), ('wizard_hat', 'cloth_blue', 'cloth_yellow'),
+      ('long', 'long'), 'hair_silver', 'staff', None, acc=('beard', None), skins=('skin_light', 'skin_porcelain')),
+    P('mage_pyromancer', 'Mage', 'Pyromancer', ('robe', 'cloth_red', 'cloth_orange'), ('robe', 'leather', 'leather'), ('hood', 'cloth_red', 'cloth_red'),
+      ('spiky', 'long'), 'hair_red', 'wand', 'tome', skins=('skin_tan', 'skin_light')),
+    P('mage_frost', 'Mage', 'Frost Mage', ('robe', 'cloth_white', 'cloth_teal'), ('robe', 'cloth_teal', 'cloth_teal'), ('circlet', 'cloth_white', 'crystal'),
+      ('sidepart', 'long'), 'hair_blue', 'staff', None, cape='cape', skins=('skin_porcelain', 'skin_brown')),
+    P('mage_apprentice', 'Mage', 'Apprentice', ('robe', 'cloth_purple', 'cloth_yellow'), ('robe', 'leather', 'leather'), ('wizard_hat', 'cloth_purple', 'cloth_yellow'),
+      ('short', 'bob'), 'hair_brown', 'wand', 'tome', acc=('glasses', 'glasses'), skins=('skin_olive', 'skin_tan')),
+    # ---------------- Necromancers
+    P('necro_lich_acolyte', 'Necromancer', 'Lich Acolyte', ('robe', 'cloth_black', 'cloth_green'), ('robe', 'leather_dark', 'leather_dark'), ('necro_cowl', 'cloth_black', 'poison'),
+      ('long', 'long'), 'hair_silver', 'necro_staff', None, skins=('skin_porcelain', 'skin_porcelain')),
+    P('necro_bone_caller', 'Necromancer', 'Bone Caller', ('robe', 'cloth_purple', 'cloth_black'), ('robe', 'leather_dark', 'leather_dark'), ('hood', 'cloth_purple', 'cloth_purple'),
+      ('bald', 'long'), 'hair_black', 'scythe', None, cape='tattered_cape', skins=('skin_light', 'skin_deep')),
+    P('necro_grave_warden', 'Necromancer', 'Grave Warden', ('hooded_cloak', 'cloth_gray', 'cloth_green'), ('boots', 'cloth_black', 'leather_dark'), None,
+      ('sidepart', 'braids'), 'hair_green', 'necro_staff', 'lantern', skins=('skin_olive', 'skin_light')),
+    P('necro_blood_witch', 'Necromancer', 'Blood Witch', ('robe', 'cloth_crimson', 'cloth_black'), ('robe', 'leather_dark', 'leather_dark'), ('wizard_hat', 'cloth_black', 'cloth_crimson'),
+      ('long', 'long'), 'hair_red', 'wand', 'tome', skins=('skin_brown', 'skin_porcelain')),
+    # ---------------- Engineers
+    P('engineer_tinkerer', 'Engineer', 'Tinkerer', ('overalls', 'cloth_blue', 'cloth_white'), ('boots', 'cloth_blue', 'leather'), ('goggles', 'cloth_gray', 'cloth_gray'),
+      ('spiky', 'ponytail'), 'hair_brown', 'wrench', None, skins=('skin_tan', 'skin_light')),
+    P('engineer_steamwright', 'Engineer', 'Steamwright', ('vest', 'cloth_brown', 'cloth_white'), ('boots', 'cloth_brown', 'leather_dark'), ('goggles', 'cloth_brown', 'cloth_brown'),
+      ('short', 'bun'), 'hair_red', 'hammer', None, acc=('beard', None), skins=('skin_porcelain', 'skin_olive')),
+    P('engineer_mechanic', 'Engineer', 'Mechanic', ('overalls', 'cloth_orange', 'cloth_gray'), ('pants', 'cloth_orange', 'leather'), ('cap', 'cloth_orange', 'cloth_gray'),
+      ('short', 'ponytail'), 'hair_black', 'wrench', None, skins=('skin_brown', 'skin_deep')),
+    P('engineer_artificer', 'Engineer', 'Artificer', ('leather', 'cloth_teal', 'cloth_tan'), ('boots', 'cloth_tan', 'leather'), ('goggles', 'cloth_teal', 'cloth_teal'),
+      ('curly', 'curly'), 'hair_blonde', 'blaster', None, skins=('skin_light', 'skin_tan')),
+    # ---------------- Merchants
+    P('merchant_trader', 'Merchant', 'Trader', ('vest', 'cloth_green', 'cloth_white'), ('pants', 'cloth_brown', 'leather'), ('turban', 'cloth_yellow', 'ruby'),
+      ('short', 'long'), 'hair_black', None, 'lantern', acc=('beard', None), skins=('skin_brown', 'skin_olive')),
+    P('merchant_shopkeeper', 'Merchant', 'Shopkeeper', ('dress', 'cloth_tan', 'cloth_white'), ('skirt', 'cloth_tan', 'leather'), None,
+      ('sidepart', 'bun'), 'hair_brown', None, None, acc=('glasses', 'glasses'), skins=('skin_light', 'skin_porcelain')),
+    P('merchant_noble', 'Merchant', 'Noble Merchant', ('coat', 'cloth_purple', 'cloth_yellow'), ('boots', 'cloth_black', 'leather_dark'), ('circlet', 'cloth_purple', 'ruby'),
+      ('sidepart', 'long'), 'hair_blonde', None, 'tome', skins=('skin_porcelain', 'skin_light')),
+    P('merchant_peddler', 'Merchant', 'Peddler', ('tunic', 'cloth_orange', 'cloth_brown'), ('pants', 'cloth_tan', 'leather'), ('straw_hat', 'cloth_red', 'cloth_red'),
+      ('curly', 'pigtails'), 'hair_brown', None, 'lantern', skins=('skin_olive', 'skin_brown')),
+    # ---------------- Farmers
+    P('farmer_homesteader', 'Farmer', 'Homesteader', ('overalls', 'cloth_blue', 'cloth_red'), ('boots', 'cloth_blue', 'leather'), ('straw_hat', 'cloth_red', 'cloth_red'),
+      ('short', 'braids'), 'hair_blonde', 'hoe', None, skins=('skin_light', 'skin_tan')),
+    P('farmer_shepherd', 'Farmer', 'Shepherd', ('tunic', 'cloth_tan', 'cloth_brown'), ('pants', 'cloth_brown', 'leather'), ('hood', 'cloth_brown', 'cloth_brown'),
+      ('curly', 'long'), 'hair_brown', 'staff', None, acc=('beard', None), skins=('skin_tan', 'skin_olive')),
+    P('farmer_orchard', 'Farmer', 'Orchard Keeper', ('dress', 'cloth_green', 'cloth_white'), ('skirt', 'cloth_green', 'leather'), ('straw_hat', 'cloth_green', 'cloth_green'),
+      ('short', 'pigtails'), 'hair_red', 'hoe', None, skins=('skin_porcelain', 'skin_light')),
+    P('farmer_miner', 'Farmer', 'Miner', ('overalls', 'cloth_brown', 'cloth_gray'), ('boots', 'cloth_brown', 'leather_dark'), ('cap', 'cloth_yellow', 'cloth_gray'),
+      ('short', 'bun'), 'hair_black', 'pickaxe', 'lantern', acc=('beard', None), skins=('skin_brown', 'skin_deep')),
+    # ---------------- Pirates
+    P('pirate_captain', 'Pirate', 'Captain', ('coat', 'cloth_red', 'cloth_yellow'), ('boots', 'cloth_black', 'leather_dark'), ('tricorn', 'cloth_black', 'cloth_black'),
+      ('long', 'long'), 'hair_black', 'cutlass', None, acc=('beard', 'eyepatch'), skins=('skin_tan', 'skin_olive')),
+    P('pirate_deckhand', 'Pirate', 'Deckhand', ('shirt', 'cloth_white', 'cloth_white'), ('shorts', 'cloth_navy', 'leather'), ('bandana', 'cloth_red', 'cloth_red'),
+      ('short', 'ponytail'), 'hair_brown', 'dagger', None, skins=('skin_brown', 'skin_light')),
+    P('pirate_quartermaster', 'Pirate', 'Quartermaster', ('vest', 'cloth_navy', 'cloth_white'), ('boots', 'cloth_navy', 'leather'), ('bandana', 'cloth_navy', 'cloth_navy'),
+      ('spiky', 'braids'), 'hair_red', 'cutlass', None, acc=('eyepatch', None), skins=('skin_porcelain', 'skin_deep')),
+    P('pirate_corsair', 'Pirate', 'Corsair', ('coat', 'cloth_teal', 'cloth_yellow'), ('pants', 'cloth_tan', 'leather'), ('tricorn', 'cloth_teal', 'cloth_teal'),
+      ('sidepart', 'long'), 'hair_blonde', 'blaster', None, skins=('skin_olive', 'skin_tan')),
+    # ---------------- Scientists
+    P('scientist_chemist', 'Scientist', 'Chemist', ('labcoat', 'cloth_blue', 'cloth_red'), ('pants', 'cloth_gray', 'leather'), ('goggles', 'cloth_gray', 'cloth_gray'),
+      ('curly', 'bun'), 'hair_silver', 'flask', None, acc=('glasses', None), skins=('skin_light', 'skin_brown')),
+    P('scientist_biologist', 'Scientist', 'Biologist', ('labcoat', 'cloth_green', 'cloth_teal'), ('pants', 'cloth_tan', 'leather'), None,
+      ('sidepart', 'ponytail'), 'hair_brown', 'scanner', None, acc=('glasses', 'glasses'), skins=('skin_tan', 'skin_porcelain')),
+    P('scientist_physicist', 'Scientist', 'Physicist', ('labcoat', 'cloth_purple', 'cloth_navy'), ('pants', 'cloth_black', 'leather_dark'), None,
+      ('spiky', 'bob'), 'hair_silver', 'scanner', 'tome', acc=('beard', 'glasses'), skins=('skin_porcelain', 'skin_olive')),
+    P('scientist_roboticist', 'Scientist', 'Roboticist', ('labcoat', 'cloth_orange', 'cloth_gray'), ('cyber', 'cloth_gray', 'neon_cyan'), ('goggles', 'cloth_gray', 'cloth_gray'),
+      ('mohawk', 'pigtails'), 'hair_blue', 'wrench', None, skins=('skin_deep', 'skin_light')),
+    # ---------------- Space explorers
+    P('space_astronaut', 'Space Explorer', 'Astronaut', ('spacesuit', 'cloth_orange', 'cloth_gray'), ('suit', 'cloth_orange', 'neon_cyan'), ('space_helmet', 'cloth_orange', 'cloth_orange'),
+      ('short', 'bob'), 'hair_brown', 'scanner', None, skins=('skin_light', 'skin_tan')),
+    P('space_marine', 'Space Explorer', 'Star Marine', ('spacesuit', 'cloth_green', 'cloth_black'), ('suit', 'cloth_green', 'neon_green'), ('space_helmet', 'cloth_green', 'cloth_green'),
+      ('short', 'short'), 'hair_black', 'blaster', 'energy_shield', skins=('skin_brown', 'skin_deep')),
+    P('space_pilot', 'Space Explorer', 'Pilot', ('spacesuit', 'cloth_blue', 'cloth_navy'), ('suit', 'cloth_blue', 'neon_cyan'), ('cap', 'cloth_navy', 'cloth_yellow'),
+      ('sidepart', 'ponytail'), 'hair_blonde', 'blaster', None, acc=('scarf', 'scarf'), skins=('skin_porcelain', 'skin_olive')),
+    P('space_xenobotanist', 'Space Explorer', 'Xenobotanist', ('spacesuit', 'cloth_teal', 'cloth_white'), ('suit', 'cloth_teal', 'neon_green'), None,
+      ('curly', 'braids'), 'hair_green', 'scanner', None, skins=('skin_olive', 'skin_brown')),
+    # ---------------- Cyberpunk
+    P('cyber_netrunner', 'Cyberpunk', 'Netrunner', ('cyberjacket', 'cloth_purple', 'neon_pink'), ('cyber', 'cloth_black', 'neon_pink'), ('cyber_visor', 'neon_pink', 'neon_pink'),
+      ('mohawk', 'bob'), 'hair_pink', 'katana', None, acc=('headphones', 'headphones'), skins=('skin_light', 'skin_tan')),
+    P('cyber_street_samurai', 'Cyberpunk', 'Street Samurai', ('cyberjacket', 'cloth_red', 'neon_cyan'), ('cyber', 'cloth_gray', 'neon_cyan'), None,
+      ('spiky', 'ponytail'), 'hair_black', 'katana', None, skins=('skin_olive', 'skin_porcelain')),
+    P('cyber_fixer', 'Cyberpunk', 'Fixer', ('cyberjacket', 'cloth_yellow', 'neon_green'), ('pants', 'cloth_black', 'leather_dark'), ('cyber_visor', 'neon_green', 'neon_green'),
+      ('sidepart', 'sidepart'), 'hair_silver', 'blaster', None, skins=('skin_deep', 'skin_brown')),
+    P('cyber_courier', 'Cyberpunk', 'Courier', ('cyberjacket', 'cloth_teal', 'neon_cyan'), ('cyber', 'cloth_navy', 'neon_cyan'), ('cap', 'cloth_black', 'neon_cyan'),
+      ('short', 'pigtails'), 'hair_blue', 'dagger', None, acc=('headphones', 'headphones'), skins=('skin_tan', 'skin_light')),
+]
+
+assert len(PRESETS) == 52, len(PRESETS)

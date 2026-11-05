@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+godot_project/.godot/
+godot_project/**/*.import
+*.tmp

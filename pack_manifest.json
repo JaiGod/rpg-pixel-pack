@@ -1,0 +1,27 @@
+{
+ "name": "RPG Pixel Pack",
+ "version": "1.0.0",
+ "tile_size": 32,
+ "counts": {
+  "character_layer_sheets": 180,
+  "character_presets": 52,
+  "character_baked_sheets": 104,
+  "monsters": 76,
+  "palette_colors": 348,
+  "ui": 11,
+  "equipment": 62,
+  "furniture": 120,
+  "buildings": 40,
+  "tilesets": 11,
+  "environment_props": 20,
+  "interiors": 35,
+  "animations": 21,
+  "godot_character_frames": 104,
+  "godot_monster_frames": 76,
+  "godot_animation_frames": 21,
+  "godot_tilesets": 12,
+  "godot_items": 62,
+  "png_files": 684,
+  "headline_assets": 437
+ }
+}

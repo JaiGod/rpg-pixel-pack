@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://rpg_pixel_pack/scripts/player_controller.gd" id="1_player"]
+[ext_resource type="Script" path="res://rpg_pixel_pack/scripts/layered_character.gd" id="2_layers"]
+[ext_resource type="Script" path="res://rpg_pixel_pack/scripts/equipment.gd" id="3_equip"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_feet"]
+size = Vector2(12, 6)
+
+[node name="Player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_feet")
+
+[node name="Visual" type="Node2D" parent="."]
+script = ExtResource("2_layers")
+skin = "skin_tan"
+hair_style = "spiky"
+hair_color = "hair_brown"
+torso_style = "tunic"
+torso_colors = PackedStringArray("cloth_blue", "cloth_yellow")
+legs_style = "boots"
+legs_colors = PackedStringArray("cloth_brown", "leather")
+cape_style = "cape"
+cape_colors = PackedStringArray("cloth_red", "gold")
+weapon = "sword"
+offhand = "round_shield"
+
+[node name="Equipment" type="Node" parent="."]
+script = ExtResource("3_equip")
+character_path = NodePath("../Visual")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0

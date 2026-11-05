@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://rpg_pixel_pack/scripts/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://rpg_pixel_pack/equipment/armor/armor_plate.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+id = "armor_plate"
+name = "Plate Armor"
+category = "armor"
+icon = ExtResource("2_icon")
+slot = "torso"
+layer_style = "plate"
+primary_ramp = "cloth_blue"
+secondary_ramp = "cloth_yellow"
+attack = 0
+defense = 12
+magic = 0
+value = 150

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://rpg_pixel_pack/scripts/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://rpg_pixel_pack/equipment/helmets/helmet_leather.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+id = "helmet_leather"
+name = "Leather Cap"
+category = "helmets"
+icon = ExtResource("2_icon")
+slot = "head"
+layer_style = "cap"
+primary_ramp = "cloth_brown"
+secondary_ramp = "cloth_brown"
+attack = 0
+defense = 10
+magic = 0
+value = 120

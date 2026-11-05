@@ -1,0 +1,348 @@
+GIMP Palette
+Name: RPG Pixel Pack
+Columns: 4
+#
+185 120 106	skin_porcelain_0
+222 160 138	skin_porcelain_1
+242 195 167	skin_porcelain_2
+253 224 204	skin_porcelain_3
+168 102  79	skin_light_0
+208 140 107	skin_light_1
+233 175 139	skin_light_2
+247 207 174	skin_light_3
+142  86  57	skin_tan_0
+181 118  80	skin_tan_1
+211 154 108	skin_tan_2
+232 187 142	skin_tan_3
+122  74  46	skin_olive_0
+158 102  64	skin_olive_1
+191 134  86	skin_olive_2
+217 167 118	skin_olive_3
+ 90  52  34	skin_brown_0
+124  74  48	skin_brown_1
+156 102  68	skin_brown_2
+186 132  92	skin_brown_3
+ 58  32  24	skin_deep_0
+ 85  48  34	skin_deep_1
+115  68  49	skin_deep_2
+146  92  68	skin_deep_3
+ 31  26  36	hair_black_0
+ 47  40  54	hair_black_1
+ 70  61  79	hair_black_2
+ 95  85 104	hair_black_3
+ 61  36  22	hair_brown_0
+ 92  56  32	hair_brown_1
+125  81  48	hair_brown_2
+158 109  68	hair_brown_3
+138  95  34	hair_blonde_0
+192 138  52	hair_blonde_1
+226 183  90	hair_blonde_2
+245 220 142	hair_blonde_3
+107  31  22	hair_red_0
+154  50  32	hair_red_1
+196  80  46	hair_red_2
+224 120  74	hair_red_3
+110 106 122	hair_silver_0
+152 148 166	hair_silver_1
+196 193 207	hair_silver_2
+236 234 242	hair_silver_3
+ 30  47 107	hair_blue_0
+ 47  78 160	hair_blue_1
+ 79 120 208	hair_blue_2
+134 170 240	hair_blue_3
+122  42  92	hair_pink_0
+178  70 132	hair_pink_1
+220 110 172	hair_pink_2
+244 166 208	hair_pink_3
+ 31  74  44	hair_green_0
+ 47 110  60	hair_green_1
+ 77 154  80	hair_green_2
+132 196 112	hair_green_3
+ 94  26  30	cloth_red_0
+143  42  42	cloth_red_1
+192  69  58	cloth_red_2
+226 112  90	cloth_red_3
+ 74  16  48	cloth_crimson_0
+122  28  68	cloth_crimson_1
+168  50  92	cloth_crimson_2
+208  90 128	cloth_crimson_3
+122  52  18	cloth_orange_0
+178  90  30	cloth_orange_1
+224 132  52	cloth_orange_2
+244 176  96	cloth_orange_3
+126  90  18	cloth_yellow_0
+184 134  30	cloth_yellow_1
+226 184  58	cloth_yellow_2
+246 224 122	cloth_yellow_3
+ 30  74  38	cloth_green_0
+ 46 110  50	cloth_green_1
+ 76 154  64	cloth_green_2
+128 196  92	cloth_green_3
+ 26  50  36	cloth_forest_0
+ 40  74  48	cloth_forest_1
+ 60 106  62	cloth_forest_2
+ 92 140  80	cloth_forest_3
+ 16  62  68	cloth_teal_0
+ 26 100 102	cloth_teal_1
+ 42 144 136	cloth_teal_2
+ 92 192 168	cloth_teal_3
+ 28  44  94	cloth_blue_0
+ 40  68 146	cloth_blue_1
+ 60 104 196	cloth_blue_2
+108 152 230	cloth_blue_3
+ 20  26  54	cloth_navy_0
+ 30  40  80	cloth_navy_1
+ 46  60 112	cloth_navy_2
+ 72  90 148	cloth_navy_3
+ 46  26  74	cloth_purple_0
+ 74  42 116	cloth_purple_1
+108  66 164	cloth_purple_2
+154 110 208	cloth_purple_3
+ 58  36  24	cloth_brown_0
+ 90  58  36	cloth_brown_1
+124  84  52	cloth_brown_2
+160 116  72	cloth_brown_3
+110  84  52	cloth_tan_0
+156 124  82	cloth_tan_1
+196 164 118	cloth_tan_2
+226 201 156	cloth_tan_3
+ 52  52  62	cloth_gray_0
+ 80  82  94	cloth_gray_1
+116 120 134	cloth_gray_2
+158 162 174	cloth_gray_3
+ 18  16  24	cloth_black_0
+ 30  26  38	cloth_black_1
+ 46  42  58	cloth_black_2
+ 68  64  84	cloth_black_3
+142 140 160	cloth_white_0
+188 188 204	cloth_white_1
+224 224 234	cloth_white_2
+248 248 252	cloth_white_3
+110  42  76	cloth_pink_0
+164  70 110	cloth_pink_1
+212 110 148	cloth_pink_2
+242 162 188	cloth_pink_3
+ 46  28  20	leather_0
+ 74  46  30	leather_1
+108  68  41	leather_2
+142  94  58	leather_3
+ 28  18  16	leather_dark_0
+ 44  30  24	leather_dark_1
+ 64  44  34	leather_dark_2
+ 90  62  46	leather_dark_3
+ 47  52  66	iron_0
+ 76  83 102	iron_1
+115 124 146	iron_2
+170 179 198	iron_3
+ 58  68  86	steel_0
+ 94 108 132	steel_1
+142 156 180	steel_2
+208 218 234	steel_3
+110  74  18	gold_0
+168 116  30	gold_1
+220 171  58	gold_2
+247 224 138	gold_3
+ 78  44  22	bronze_0
+122  74  36	bronze_1
+168 112  58	bronze_2
+212 160  96	bronze_3
+ 92  96 112	silver_0
+138 144 162	silver_1
+188 194 208	silver_2
+238 240 246	silver_3
+ 29  91 122	crystal_0
+ 47 147 184	crystal_1
+111 208 230	crystal_2
+200 244 250	crystal_3
+ 62  28  94	amethyst_0
+106  52 160	amethyst_1
+158  98 214	amethyst_2
+212 168 244	amethyst_3
+ 90  14  28	ruby_0
+150  28  44	ruby_1
+210  58  64	ruby_2
+244 132 138	ruby_3
+ 14  74  48	emerald_0
+ 26 122  74	emerald_1
+ 48 176 104	emerald_2
+132 228 164	emerald_3
+122 112  88	bone_0
+176 166 132	bone_1
+216 208 176	bone_2
+244 240 220	bone_3
+ 16  12  26	shadow_0
+ 30  22  48	shadow_1
+ 52  38  80	shadow_2
+ 84  64 122	shadow_3
+106  26 110	neon_pink_0
+176  42 168	neon_pink_1
+238  80 216	neon_pink_2
+255 168 244	neon_pink_3
+ 14  74  98	neon_cyan_0
+ 26 136 168	neon_cyan_1
+ 48 208 230	neon_cyan_2
+168 248 255	neon_cyan_3
+ 26  90  30	neon_green_0
+ 42 160  48	neon_green_1
+ 90 232  74	neon_green_2
+196 255 160	neon_green_3
+138  28  16	fire_0
+216  70  26	fire_1
+248 140  34	fire_2
+252 220  90	fire_3
+ 26  42 138	magic_blue_0
+ 46  84 216	magic_blue_1
+ 94 156 250	magic_blue_2
+196 228 255	magic_blue_3
+ 58  16 112	magic_purple_0
+112  32 192	magic_purple_1
+176  96 240	magic_purple_2
+236 196 255	magic_purple_3
+ 46  74  16	poison_0
+ 90 138  26	poison_1
+148 200  42	poison_2
+216 244 106	poison_3
+ 36  80  46	grass_0
+ 53 122  58	grass_1
+ 88 166  70	grass_2
+140 207  92	grass_3
+ 78  84  36	grass_dry_0
+118 122  50	grass_dry_1
+160 162  74	grass_dry_2
+200 196 110	grass_dry_3
+ 22  58  38	leaf_0
+ 34  88  58	leaf_1
+ 52 122  68	leaf_2
+ 88 160  80	leaf_3
+106  42  20	leaf_autumn_0
+162  74  28	leaf_autumn_1
+210 120  42	leaf_autumn_2
+240 176  72	leaf_autumn_3
+ 14  42  38	pine_0
+ 22  62  52	pine_1
+ 34  88  74	pine_2
+ 58 122  94	pine_3
+ 74  47  34	dirt_0
+110  70  48	dirt_1
+147  99  63	dirt_2
+184 138  92	dirt_3
+156 122  72	sand_0
+201 163 106	sand_1
+230 200 142	sand_2
+246 228 180	sand_3
+122  82  50	sandstone_0
+168 116  68	sandstone_1
+204 154  92	sandstone_2
+232 192 136	sandstone_3
+125 143 176	snow_0
+169 186 214	snow_1
+212 224 240	snow_2
+248 251 255	snow_3
+ 58 106 154	ice_0
+ 90 154 204	ice_1
+148 205 238	ice_2
+220 244 255	ice_3
+ 57  60  74	stone_0
+ 86  90 107	stone_1
+125 130 148	stone_2
+168 173 189	stone_3
+ 30  30  42	stone_dark_0
+ 46  46  62	stone_dark_1
+ 68  70  88	stone_dark_2
+ 94  98 116	stone_dark_3
+ 74  62  58	stone_warm_0
+106  90  82	stone_warm_1
+142 124 112	stone_warm_2
+180 162 148	stone_warm_3
+ 62  58  64	cobble_0
+ 92  86  96	cobble_1
+128 122 130	cobble_2
+166 160 166	cobble_3
+ 90  36  32	brick_0
+132  54  42	brick_1
+172  80  56	brick_2
+204 122  86	brick_3
+ 26  58 110	water_0
+ 40  96 168	water_1
+ 63 143 214	water_2
+124 196 240	water_3
+ 14  30  70	water_deep_0
+ 22  48 110	water_deep_1
+ 34  72 154	water_deep_2
+ 58 110 196	water_deep_3
+ 30  42  30	swamp_0
+ 46  62  42	swamp_1
+ 68  88  58	swamp_2
+ 98 116  76	swamp_3
+ 28  42  36	swamp_water_0
+ 42  62  48	swamp_water_1
+ 62  86  64	swamp_water_2
+ 88 112  80	swamp_water_3
+ 46  34  24	mud_0
+ 68  50  30	mud_1
+ 94  70  40	mud_2
+122  94  54	mud_3
+110  20  16	lava_0
+184  48  26	lava_1
+236 106  32	lava_2
+252 192  72	lava_3
+ 61  38  24	wood_0
+ 94  59  34	wood_1
+131  85  50	wood_2
+168 116  74	wood_3
+ 36  22  14	wood_dark_0
+ 58  36  22	wood_dark_1
+ 85  54  32	wood_dark_2
+116  80  46	wood_dark_3
+122  84  52	wood_light_0
+168 120  76	wood_light_1
+204 160 106	wood_light_2
+232 198 144	wood_light_3
+110  84  32	thatch_0
+156 122  48	thatch_1
+196 160  74	thatch_2
+226 196 112	thatch_3
+ 90  28  26	roof_red_0
+138  44  36	roof_red_1
+178  68  50	roof_red_2
+212 104  74	roof_red_3
+ 30  42  78	roof_blue_0
+ 44  62 114	roof_blue_1
+ 64  88 154	roof_blue_2
+100 128 192	roof_blue_3
+ 36  38  58	roof_slate_0
+ 54  58  82	roof_slate_1
+ 76  82 112	roof_slate_2
+106 114 148	roof_slate_3
+ 28  58  42	roof_green_0
+ 42  84  58	roof_green_1
+ 60 116  80	roof_green_2
+ 90 150 106	roof_green_3
+154 138 116	plaster_0
+196 180 152	plaster_1
+224 212 184	plaster_2
+244 236 216	plaster_3
+ 42  47  62	tech_0
+ 62  70  89	tech_1
+ 91 102 128	tech_2
+135 148 176	tech_3
+106 116 136	tech_light_0
+154 164 184	tech_light_1
+200 208 220	tech_light_2
+238 242 248	tech_light_3
+ 18  20  28	tech_dark_0
+ 28  32  44	tech_dark_1
+ 42  48  64	tech_dark_2
+ 60  68  88	tech_dark_3
+ 26  58  90	glass_0
+ 42  90 132	glass_1
+ 74 138 180	glass_2
+154 208 238	glass_3
+ 10  42  42	screen_0
+ 14  74  68	screen_1
+ 26 138 110	screen_2
+ 90 228 176	screen_3
+106  74  10	warning_0
+184 138  20	warning_1
+240 200  30	warning_2
+252 236 122	warning_3

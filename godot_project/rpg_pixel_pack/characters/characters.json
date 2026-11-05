@@ -1,0 +1,6707 @@
+{
+ "frame_size": [
+  32,
+  32
+ ],
+ "sheet_columns": 6,
+ "sheet_rows": 18,
+ "directions": [
+  "down",
+  "up",
+  "side"
+ ],
+ "side_faces": "right (flip_h for left)",
+ "animations": [
+  {
+   "name": "idle_down",
+   "row": 0,
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  },
+  {
+   "name": "idle_up",
+   "row": 1,
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  },
+  {
+   "name": "idle_side",
+   "row": 2,
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  },
+  {
+   "name": "walk_down",
+   "row": 3,
+   "frames": 6,
+   "fps": 10,
+   "loop": true
+  },
+  {
+   "name": "walk_up",
+   "row": 4,
+   "frames": 6,
+   "fps": 10,
+   "loop": true
+  },
+  {
+   "name": "walk_side",
+   "row": 5,
+   "frames": 6,
+   "fps": 10,
+   "loop": true
+  },
+  {
+   "name": "run_down",
+   "row": 6,
+   "frames": 6,
+   "fps": 14,
+   "loop": true
+  },
+  {
+   "name": "run_up",
+   "row": 7,
+   "frames": 6,
+   "fps": 14,
+   "loop": true
+  },
+  {
+   "name": "run_side",
+   "row": 8,
+   "frames": 6,
+   "fps": 14,
+   "loop": true
+  },
+  {
+   "name": "attack_down",
+   "row": 9,
+   "frames": 4,
+   "fps": 12,
+   "loop": false
+  },
+  {
+   "name": "attack_up",
+   "row": 10,
+   "frames": 4,
+   "fps": 12,
+   "loop": false
+  },
+  {
+   "name": "attack_side",
+   "row": 11,
+   "frames": 4,
+   "fps": 12,
+   "loop": false
+  },
+  {
+   "name": "hurt_down",
+   "row": 12,
+   "frames": 2,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "hurt_up",
+   "row": 13,
+   "frames": 2,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "hurt_side",
+   "row": 14,
+   "frames": 2,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "death_down",
+   "row": 15,
+   "frames": 5,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "death_up",
+   "row": 16,
+   "frames": 5,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "name": "death_side",
+   "row": 17,
+   "frames": 5,
+   "fps": 8,
+   "loop": false
+  }
+ ],
+ "layer_order": [
+  "hair_back",
+  "body",
+  "legs",
+  "torso",
+  "cape",
+  "hair",
+  "head",
+  "accessory",
+  "offhand",
+  "weapon"
+ ],
+ "palette_swap": {
+  "primary_keys": [
+   [
+    60,
+    60,
+    60
+   ],
+   [
+    110,
+    110,
+    110
+   ],
+   [
+    165,
+    165,
+    165
+   ],
+   [
+    220,
+    220,
+    220
+   ]
+  ],
+  "secondary_keys": [
+   [
+    52,
+    40,
+    92
+   ],
+   [
+    92,
+    72,
+    152
+   ],
+   [
+    140,
+    120,
+    204
+   ],
+   [
+    190,
+    176,
+    236
+   ]
+  ],
+  "note": "Tintable layers use these exact key colors; replace with any ramp from assets/palette/ramps.json"
+ },
+ "layers": {
+  "body": {
+   "styles": [
+    "skin_porcelain",
+    "skin_light",
+    "skin_tan",
+    "skin_olive",
+    "skin_brown",
+    "skin_deep"
+   ],
+   "tintable": false
+  },
+  "hair": {
+   "styles": [
+    "short",
+    "spiky",
+    "long",
+    "ponytail",
+    "bob",
+    "bun",
+    "mohawk",
+    "braids",
+    "bald",
+    "curly",
+    "sidepart",
+    "pigtails"
+   ],
+   "tintable": "primary",
+   "colors": [
+    "hair_black",
+    "hair_brown",
+    "hair_blonde",
+    "hair_red",
+    "hair_silver",
+    "hair_blue",
+    "hair_pink",
+    "hair_green"
+   ]
+  },
+  "hair_back": {
+   "styles": [
+    "long"
+   ],
+   "tintable": "primary"
+  },
+  "torso": {
+   "styles": {
+    "tunic": "Belted cloth tunic",
+    "plate": "Steel plate cuirass with tabard",
+    "leather": "Leather jerkin over shirt",
+    "robe": "Full-length mage robe",
+    "overalls": "Work overalls over shirt",
+    "vest": "Merchant vest over long shirt",
+    "coat": "Long captain coat with gold trim",
+    "labcoat": "Lab coat over shirt",
+    "spacesuit": "Pressurized EVA suit",
+    "cyberjacket": "Neon-trimmed street jacket",
+    "shirt": "Simple shirt",
+    "dress": "Long dress with apron",
+    "hooded_cloak": "Hooded rogue cloak",
+    "chainmail": "Chainmail hauberk"
+   },
+   "tintable": "primary+secondary"
+  },
+  "legs": {
+   "styles": {
+    "pants": "Cloth trousers with leather shoes",
+    "boots": "Trousers tucked into tall boots",
+    "greaves": "Steel greaves and sabatons",
+    "shorts": "Shorts with sandals",
+    "skirt": "Knee skirt with boots",
+    "suit": "EVA suit legs with mag-boots",
+    "robe": "Soft shoes (for robes / long coats)",
+    "cyber": "Cargo pants with neon sneakers"
+   },
+   "tintable": "primary+secondary"
+  },
+  "head": {
+   "styles": {
+    "knight_helm": "Great helm with visor slit",
+    "viking_helm": "Horned steel helm",
+    "hood": "Cloth hood",
+    "wizard_hat": "Pointed wizard hat",
+    "necro_cowl": "Bone-crowned cowl",
+    "bandana": "Tied bandana",
+    "tricorn": "Pirate tricorn",
+    "straw_hat": "Wide straw hat",
+    "goggles": "Engineer goggles",
+    "space_helmet": "Glass-dome EVA helmet",
+    "cyber_visor": "Neon visor",
+    "cap": "Peaked cap",
+    "turban": "Merchant turban with jewel",
+    "circlet": "Gold circlet",
+    "feather_hat": "Ranger hat with feather"
+   },
+   "tintable": "primary+secondary"
+  },
+  "accessory": {
+   "styles": {
+    "beard": "Full beard (tintable with hair color)",
+    "glasses": "Round glasses",
+    "eyepatch": "Pirate eyepatch",
+    "mask": "Rogue face mask",
+    "scarf": "Scarf",
+    "headphones": "Cyber headphones"
+   },
+   "tintable": "primary+secondary"
+  },
+  "cape": {
+   "styles": {
+    "cape": "Flowing cape",
+    "tattered_cape": "Tattered cape"
+   },
+   "tintable": "primary+secondary"
+  },
+  "weapon": {
+   "styles": {
+    "sword": {
+     "kind": "blade",
+     "attack": "swing"
+    },
+    "greatsword": {
+     "kind": "blade",
+     "attack": "swing"
+    },
+    "axe": {
+     "kind": "axe",
+     "attack": "swing"
+    },
+    "spear": {
+     "kind": "spear",
+     "attack": "thrust"
+    },
+    "bow": {
+     "kind": "bow",
+     "attack": "shoot"
+    },
+    "crossbow": {
+     "kind": "crossbow",
+     "attack": "shoot"
+    },
+    "staff": {
+     "kind": "staff",
+     "attack": "cast"
+    },
+    "necro_staff": {
+     "kind": "staff",
+     "attack": "cast"
+    },
+    "wand": {
+     "kind": "wand",
+     "attack": "cast"
+    },
+    "dagger": {
+     "kind": "blade",
+     "attack": "thrust"
+    },
+    "hammer": {
+     "kind": "hammer",
+     "attack": "swing"
+    },
+    "wrench": {
+     "kind": "wrench",
+     "attack": "swing"
+    },
+    "blaster": {
+     "kind": "gun",
+     "attack": "shoot"
+    },
+    "katana": {
+     "kind": "blade",
+     "attack": "swing"
+    },
+    "hoe": {
+     "kind": "hoe",
+     "attack": "swing"
+    },
+    "scythe": {
+     "kind": "scythe",
+     "attack": "swing"
+    },
+    "cutlass": {
+     "kind": "blade",
+     "attack": "swing"
+    },
+    "flask": {
+     "kind": "flask",
+     "attack": "shoot"
+    },
+    "pickaxe": {
+     "kind": "pick",
+     "attack": "swing"
+    },
+    "scanner": {
+     "kind": "gun",
+     "attack": "shoot"
+    }
+   },
+   "tintable": false
+  },
+  "offhand": {
+   "styles": {
+    "round_shield": "Wooden round shield with iron boss",
+    "kite_shield": "Heater shield with heraldry",
+    "buckler": "Small steel buckler",
+    "tome": "Spell tome",
+    "lantern": "Oil lantern",
+    "energy_shield": "Hard-light energy shield"
+   },
+   "tintable": "primary+secondary (kite_shield, tome)"
+  }
+ },
+ "presets": [
+  {
+   "id": "warrior_mercenary",
+   "cls": "Warrior",
+   "name": "Mercenary",
+   "torso": [
+    "tunic",
+    "cloth_red",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "boots",
+    "cloth_brown",
+    "leather"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "ponytail"
+   },
+   "hair_color": "hair_brown",
+   "weapon": "sword",
+   "offhand": "round_shield",
+   "acc": {
+    "male": "beard",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_tan",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/warrior/warrior_mercenary_male.png",
+    "female": "presets/warrior/warrior_mercenary_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_red",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_brown",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "offhand",
+      "style": "round_shield",
+      "primary": "cloth_red",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "sword",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_red",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "offhand",
+      "style": "round_shield",
+      "primary": "cloth_red",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "sword",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "warrior_berserker",
+   "cls": "Warrior",
+   "name": "Berserker",
+   "torso": [
+    "leather",
+    "cloth_red",
+    "cloth_brown"
+   ],
+   "legs": [
+    "pants",
+    "cloth_brown",
+    "leather"
+   ],
+   "head": [
+    "viking_helm",
+    "cloth_gray",
+    "cloth_gray"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "long",
+    "female": "braids"
+   },
+   "hair_color": "hair_red",
+   "weapon": "axe",
+   "offhand": null,
+   "acc": {
+    "male": "beard",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/warrior/warrior_berserker_male.png",
+    "female": "presets/warrior/warrior_berserker_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_red",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "viking_helm",
+      "primary": "cloth_gray",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_red",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "weapon",
+      "style": "axe",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_red",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "hair",
+      "style": "braids",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "viking_helm",
+      "primary": "cloth_gray",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "weapon",
+      "style": "axe",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "warrior_gladiator",
+   "cls": "Warrior",
+   "name": "Gladiator",
+   "torso": [
+    "tunic",
+    "cloth_crimson",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "shorts",
+    "cloth_crimson",
+    "leather"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "bald",
+    "female": "bun"
+   },
+   "hair_color": "hair_black",
+   "weapon": "spear",
+   "offhand": "buckler",
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_brown",
+    "female": "skin_deep"
+   },
+   "files": {
+    "male": "presets/warrior/warrior_gladiator_male.png",
+    "female": "presets/warrior/warrior_gladiator_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "shorts",
+      "primary": "cloth_crimson",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "bald",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "offhand",
+      "style": "buckler",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "spear",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_deep",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "shorts",
+      "primary": "cloth_crimson",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "bun",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "offhand",
+      "style": "buckler",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "spear",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "warrior_ronin",
+   "cls": "Warrior",
+   "name": "Ronin",
+   "torso": [
+    "tunic",
+    "cloth_navy",
+    "cloth_white"
+   ],
+   "legs": [
+    "pants",
+    "cloth_black",
+    "leather"
+   ],
+   "head": [
+    "bandana",
+    "cloth_white",
+    "cloth_white"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "ponytail",
+    "female": "ponytail"
+   },
+   "hair_color": "hair_black",
+   "weapon": "greatsword",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_porcelain"
+   },
+   "files": {
+    "male": "presets/warrior/warrior_ronin_male.png",
+    "female": "presets/warrior/warrior_ronin_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_black",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_navy",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "bandana",
+      "primary": "cloth_white",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "weapon",
+      "style": "greatsword",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_black",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_navy",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "bandana",
+      "primary": "cloth_white",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "weapon",
+      "style": "greatsword",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "knight_paladin",
+   "cls": "Knight",
+   "name": "Paladin",
+   "torso": [
+    "plate",
+    "cloth_white",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "greaves",
+    "cloth_white",
+    "cloth_white"
+   ],
+   "head": [
+    "knight_helm",
+    "cloth_yellow",
+    "cloth_yellow"
+   ],
+   "cape": "cape",
+   "hair": {
+    "male": "short",
+    "female": "long"
+   },
+   "hair_color": "hair_blonde",
+   "weapon": "hammer",
+   "offhand": "kite_shield",
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_porcelain"
+   },
+   "files": {
+    "male": "presets/knight/knight_paladin_male.png",
+    "female": "presets/knight/knight_paladin_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "greaves",
+      "primary": "cloth_white",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "torso",
+      "style": "plate",
+      "primary": "cloth_white",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "cape",
+      "style": "cape",
+      "primary": "cloth_red",
+      "secondary": "gold"
+     },
+     {
+      "layer": "head",
+      "style": "knight_helm",
+      "primary": "cloth_yellow",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "offhand",
+      "style": "kite_shield",
+      "primary": "cloth_white",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "hammer",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "greaves",
+      "primary": "cloth_white",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "torso",
+      "style": "plate",
+      "primary": "cloth_white",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "cape",
+      "style": "cape",
+      "primary": "cloth_red",
+      "secondary": "gold"
+     },
+     {
+      "layer": "head",
+      "style": "knight_helm",
+      "primary": "cloth_yellow",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "offhand",
+      "style": "kite_shield",
+      "primary": "cloth_white",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "hammer",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "knight_royal_guard",
+   "cls": "Knight",
+   "name": "Royal Guard",
+   "torso": [
+    "plate",
+    "cloth_blue",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "greaves",
+    "cloth_blue",
+    "cloth_blue"
+   ],
+   "head": [
+    "knight_helm",
+    "cloth_blue",
+    "cloth_blue"
+   ],
+   "cape": "cape",
+   "hair": {
+    "male": "short",
+    "female": "bob"
+   },
+   "hair_color": "hair_brown",
+   "weapon": "sword",
+   "offhand": "kite_shield",
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_olive",
+    "female": "skin_tan"
+   },
+   "files": {
+    "male": "presets/knight/knight_royal_guard_male.png",
+    "female": "presets/knight/knight_royal_guard_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "greaves",
+      "primary": "cloth_blue",
+      "secondary": "cloth_blue"
+     },
+     {
+      "layer": "torso",
+      "style": "plate",
+      "primary": "cloth_blue",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "cape",
+      "style": "cape",
+      "primary": "cloth_blue",
+      "secondary": "gold"
+     },
+     {
+      "layer": "head",
+      "style": "knight_helm",
+      "primary": "cloth_blue",
+      "secondary": "cloth_blue"
+     },
+     {
+      "layer": "offhand",
+      "style": "kite_shield",
+      "primary": "cloth_blue",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "sword",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "greaves",
+      "primary": "cloth_blue",
+      "secondary": "cloth_blue"
+     },
+     {
+      "layer": "torso",
+      "style": "plate",
+      "primary": "cloth_blue",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "cape",
+      "style": "cape",
+      "primary": "cloth_blue",
+      "secondary": "gold"
+     },
+     {
+      "layer": "head",
+      "style": "knight_helm",
+      "primary": "cloth_blue",
+      "secondary": "cloth_blue"
+     },
+     {
+      "layer": "offhand",
+      "style": "kite_shield",
+      "primary": "cloth_blue",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "sword",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "knight_black",
+   "cls": "Knight",
+   "name": "Black Knight",
+   "torso": [
+    "plate",
+    "cloth_black",
+    "cloth_crimson"
+   ],
+   "legs": [
+    "greaves",
+    "cloth_black",
+    "cloth_black"
+   ],
+   "head": [
+    "knight_helm",
+    "cloth_crimson",
+    "cloth_crimson"
+   ],
+   "cape": "tattered_cape",
+   "hair": {
+    "male": "short",
+    "female": "long"
+   },
+   "hair_color": "hair_black",
+   "weapon": "greatsword",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/knight/knight_black_male.png",
+    "female": "presets/knight/knight_black_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "greaves",
+      "primary": "cloth_black",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "torso",
+      "style": "plate",
+      "primary": "cloth_black",
+      "secondary": "cloth_crimson"
+     },
+     {
+      "layer": "cape",
+      "style": "tattered_cape",
+      "primary": "cloth_black",
+      "secondary": "gold"
+     },
+     {
+      "layer": "head",
+      "style": "knight_helm",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_crimson"
+     },
+     {
+      "layer": "weapon",
+      "style": "greatsword",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "greaves",
+      "primary": "cloth_black",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "torso",
+      "style": "plate",
+      "primary": "cloth_black",
+      "secondary": "cloth_crimson"
+     },
+     {
+      "layer": "cape",
+      "style": "tattered_cape",
+      "primary": "cloth_black",
+      "secondary": "gold"
+     },
+     {
+      "layer": "head",
+      "style": "knight_helm",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_crimson"
+     },
+     {
+      "layer": "weapon",
+      "style": "greatsword",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "knight_squire",
+   "cls": "Knight",
+   "name": "Squire",
+   "torso": [
+    "chainmail",
+    "cloth_green",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "boots",
+    "cloth_brown",
+    "leather"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "sidepart",
+    "female": "bob"
+   },
+   "hair_color": "hair_blonde",
+   "weapon": "sword",
+   "offhand": "buckler",
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_brown"
+   },
+   "files": {
+    "male": "presets/knight/knight_squire_male.png",
+    "female": "presets/knight/knight_squire_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "chainmail",
+      "primary": "cloth_green",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "offhand",
+      "style": "buckler",
+      "primary": "cloth_green",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "sword",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "chainmail",
+      "primary": "cloth_green",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "bob",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "offhand",
+      "style": "buckler",
+      "primary": "cloth_green",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "sword",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ranger_woodland",
+   "cls": "Ranger",
+   "name": "Woodland Ranger",
+   "torso": [
+    "leather",
+    "cloth_green",
+    "cloth_forest"
+   ],
+   "legs": [
+    "boots",
+    "cloth_forest",
+    "leather"
+   ],
+   "head": [
+    "feather_hat",
+    "cloth_forest",
+    "cloth_red"
+   ],
+   "cape": "cape",
+   "hair": {
+    "male": "short",
+    "female": "ponytail"
+   },
+   "hair_color": "hair_brown",
+   "weapon": "bow",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_tan",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/ranger/ranger_woodland_male.png",
+    "female": "presets/ranger/ranger_woodland_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_forest",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_green",
+      "secondary": "cloth_forest"
+     },
+     {
+      "layer": "cape",
+      "style": "cape",
+      "primary": "cloth_green",
+      "secondary": "gold"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "feather_hat",
+      "primary": "cloth_forest",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "weapon",
+      "style": "bow",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_forest",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_green",
+      "secondary": "cloth_forest"
+     },
+     {
+      "layer": "cape",
+      "style": "cape",
+      "primary": "cloth_green",
+      "secondary": "gold"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "feather_hat",
+      "primary": "cloth_forest",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "weapon",
+      "style": "bow",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ranger_hunter",
+   "cls": "Ranger",
+   "name": "Hunter",
+   "torso": [
+    "leather",
+    "cloth_brown",
+    "cloth_tan"
+   ],
+   "legs": [
+    "pants",
+    "cloth_brown",
+    "leather"
+   ],
+   "head": [
+    "hood",
+    "cloth_forest",
+    "cloth_forest"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "braids"
+   },
+   "hair_color": "hair_red",
+   "weapon": "crossbow",
+   "offhand": null,
+   "acc": {
+    "male": "beard",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_olive"
+   },
+   "files": {
+    "male": "presets/ranger/ranger_hunter_male.png",
+    "female": "presets/ranger/ranger_hunter_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_brown",
+      "secondary": "cloth_tan"
+     },
+     {
+      "layer": "head",
+      "style": "hood",
+      "primary": "cloth_forest",
+      "secondary": "cloth_forest"
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_red",
+      "secondary": "cloth_tan"
+     },
+     {
+      "layer": "weapon",
+      "style": "crossbow",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_brown",
+      "secondary": "cloth_tan"
+     },
+     {
+      "layer": "head",
+      "style": "hood",
+      "primary": "cloth_forest",
+      "secondary": "cloth_forest"
+     },
+     {
+      "layer": "weapon",
+      "style": "crossbow",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ranger_elf_scout",
+   "cls": "Ranger",
+   "name": "Elf Scout",
+   "torso": [
+    "tunic",
+    "cloth_teal",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "boots",
+    "cloth_teal",
+    "leather"
+   ],
+   "head": [
+    "circlet",
+    "cloth_teal",
+    "emerald"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "long",
+    "female": "long"
+   },
+   "hair_color": "hair_silver",
+   "weapon": "bow",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_porcelain"
+   },
+   "files": {
+    "male": "presets/ranger/ranger_elf_scout_male.png",
+    "female": "presets/ranger/ranger_elf_scout_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_teal",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_teal",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "circlet",
+      "primary": "cloth_teal",
+      "secondary": "emerald"
+     },
+     {
+      "layer": "weapon",
+      "style": "bow",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_teal",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_teal",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "circlet",
+      "primary": "cloth_teal",
+      "secondary": "emerald"
+     },
+     {
+      "layer": "weapon",
+      "style": "bow",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "ranger_beastmaster",
+   "cls": "Ranger",
+   "name": "Beastmaster",
+   "torso": [
+    "leather",
+    "cloth_orange",
+    "cloth_brown"
+   ],
+   "legs": [
+    "shorts",
+    "cloth_brown",
+    "leather"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "mohawk",
+    "female": "pigtails"
+   },
+   "hair_color": "hair_black",
+   "weapon": "spear",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_deep",
+    "female": "skin_brown"
+   },
+   "files": {
+    "male": "presets/ranger/ranger_beastmaster_male.png",
+    "female": "presets/ranger/ranger_beastmaster_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_deep",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "shorts",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_orange",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "hair",
+      "style": "mohawk",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "weapon",
+      "style": "spear",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "shorts",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_orange",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "hair",
+      "style": "pigtails",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "weapon",
+      "style": "spear",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "rogue_thief",
+   "cls": "Rogue",
+   "name": "Thief",
+   "torso": [
+    "hooded_cloak",
+    "cloth_gray",
+    "cloth_black"
+   ],
+   "legs": [
+    "pants",
+    "cloth_black",
+    "leather"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "bob"
+   },
+   "hair_color": "hair_black",
+   "weapon": "dagger",
+   "offhand": null,
+   "acc": {
+    "male": "mask",
+    "female": "mask"
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_tan"
+   },
+   "files": {
+    "male": "presets/rogue/rogue_thief_male.png",
+    "female": "presets/rogue/rogue_thief_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_black",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "hooded_cloak",
+      "primary": "cloth_gray",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "accessory",
+      "style": "mask",
+      "primary": "cloth_gray",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "weapon",
+      "style": "dagger",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_black",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "hooded_cloak",
+      "primary": "cloth_gray",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "hair",
+      "style": "bob",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "accessory",
+      "style": "mask",
+      "primary": "cloth_gray",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "weapon",
+      "style": "dagger",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "rogue_assassin",
+   "cls": "Rogue",
+   "name": "Assassin",
+   "torso": [
+    "leather",
+    "cloth_crimson",
+    "cloth_black"
+   ],
+   "legs": [
+    "boots",
+    "cloth_black",
+    "leather_dark"
+   ],
+   "head": [
+    "hood",
+    "cloth_black",
+    "cloth_black"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "long"
+   },
+   "hair_color": "hair_black",
+   "weapon": "dagger",
+   "offhand": null,
+   "acc": {
+    "male": "mask",
+    "female": "mask"
+   },
+   "skin": {
+    "male": "skin_olive",
+    "female": "skin_porcelain"
+   },
+   "files": {
+    "male": "presets/rogue/rogue_assassin_male.png",
+    "female": "presets/rogue/rogue_assassin_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "head",
+      "style": "hood",
+      "primary": "cloth_black",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "accessory",
+      "style": "mask",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "weapon",
+      "style": "dagger",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "head",
+      "style": "hood",
+      "primary": "cloth_black",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "accessory",
+      "style": "mask",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "weapon",
+      "style": "dagger",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "rogue_bandit",
+   "cls": "Rogue",
+   "name": "Bandit",
+   "torso": [
+    "leather",
+    "cloth_red",
+    "cloth_tan"
+   ],
+   "legs": [
+    "pants",
+    "cloth_tan",
+    "leather"
+   ],
+   "head": [
+    "bandana",
+    "cloth_red",
+    "cloth_red"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "ponytail"
+   },
+   "hair_color": "hair_brown",
+   "weapon": "cutlass",
+   "offhand": null,
+   "acc": {
+    "male": "beard",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_tan",
+    "female": "skin_brown"
+   },
+   "files": {
+    "male": "presets/rogue/rogue_bandit_male.png",
+    "female": "presets/rogue/rogue_bandit_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_red",
+      "secondary": "cloth_tan"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "bandana",
+      "primary": "cloth_red",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_brown",
+      "secondary": "cloth_tan"
+     },
+     {
+      "layer": "weapon",
+      "style": "cutlass",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_red",
+      "secondary": "cloth_tan"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "bandana",
+      "primary": "cloth_red",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "weapon",
+      "style": "cutlass",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "rogue_shadowblade",
+   "cls": "Rogue",
+   "name": "Shadowblade",
+   "torso": [
+    "hooded_cloak",
+    "cloth_purple",
+    "cloth_black"
+   ],
+   "legs": [
+    "boots",
+    "cloth_black",
+    "leather_dark"
+   ],
+   "head": null,
+   "cape": "tattered_cape",
+   "hair": {
+    "male": "spiky",
+    "female": "sidepart"
+   },
+   "hair_color": "hair_silver",
+   "weapon": "katana",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_deep"
+   },
+   "files": {
+    "male": "presets/rogue/rogue_shadowblade_male.png",
+    "female": "presets/rogue/rogue_shadowblade_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "hooded_cloak",
+      "primary": "cloth_purple",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "cape",
+      "style": "tattered_cape",
+      "primary": "cloth_purple",
+      "secondary": "gold"
+     },
+     {
+      "layer": "hair",
+      "style": "spiky",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "weapon",
+      "style": "katana",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_deep",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "hooded_cloak",
+      "primary": "cloth_purple",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "cape",
+      "style": "tattered_cape",
+      "primary": "cloth_purple",
+      "secondary": "gold"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "weapon",
+      "style": "katana",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "mage_wizard",
+   "cls": "Mage",
+   "name": "Wizard",
+   "torso": [
+    "robe",
+    "cloth_blue",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "robe",
+    "leather",
+    "leather"
+   ],
+   "head": [
+    "wizard_hat",
+    "cloth_blue",
+    "cloth_yellow"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "long",
+    "female": "long"
+   },
+   "hair_color": "hair_silver",
+   "weapon": "staff",
+   "offhand": null,
+   "acc": {
+    "male": "beard",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_porcelain"
+   },
+   "files": {
+    "male": "presets/mage/mage_wizard_male.png",
+    "female": "presets/mage/mage_wizard_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_blue",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "wizard_hat",
+      "primary": "cloth_blue",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_silver",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "staff",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_blue",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "wizard_hat",
+      "primary": "cloth_blue",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "staff",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "mage_pyromancer",
+   "cls": "Mage",
+   "name": "Pyromancer",
+   "torso": [
+    "robe",
+    "cloth_red",
+    "cloth_orange"
+   ],
+   "legs": [
+    "robe",
+    "leather",
+    "leather"
+   ],
+   "head": [
+    "hood",
+    "cloth_red",
+    "cloth_red"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "spiky",
+    "female": "long"
+   },
+   "hair_color": "hair_red",
+   "weapon": "wand",
+   "offhand": "tome",
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_tan",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/mage/mage_pyromancer_male.png",
+    "female": "presets/mage/mage_pyromancer_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_red",
+      "secondary": "cloth_orange"
+     },
+     {
+      "layer": "head",
+      "style": "hood",
+      "primary": "cloth_red",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "offhand",
+      "style": "tome",
+      "primary": "cloth_red",
+      "secondary": "cloth_orange"
+     },
+     {
+      "layer": "weapon",
+      "style": "wand",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_red",
+      "secondary": "cloth_orange"
+     },
+     {
+      "layer": "head",
+      "style": "hood",
+      "primary": "cloth_red",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "offhand",
+      "style": "tome",
+      "primary": "cloth_red",
+      "secondary": "cloth_orange"
+     },
+     {
+      "layer": "weapon",
+      "style": "wand",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "mage_frost",
+   "cls": "Mage",
+   "name": "Frost Mage",
+   "torso": [
+    "robe",
+    "cloth_white",
+    "cloth_teal"
+   ],
+   "legs": [
+    "robe",
+    "cloth_teal",
+    "cloth_teal"
+   ],
+   "head": [
+    "circlet",
+    "cloth_white",
+    "crystal"
+   ],
+   "cape": "cape",
+   "hair": {
+    "male": "sidepart",
+    "female": "long"
+   },
+   "hair_color": "hair_blue",
+   "weapon": "staff",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_brown"
+   },
+   "files": {
+    "male": "presets/mage/mage_frost_male.png",
+    "female": "presets/mage/mage_frost_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "cloth_teal",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_white",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "cape",
+      "style": "cape",
+      "primary": "cloth_red",
+      "secondary": "gold"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_blue",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "circlet",
+      "primary": "cloth_white",
+      "secondary": "crystal"
+     },
+     {
+      "layer": "weapon",
+      "style": "staff",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_blue",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "cloth_teal",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_white",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "cape",
+      "style": "cape",
+      "primary": "cloth_red",
+      "secondary": "gold"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_blue",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "circlet",
+      "primary": "cloth_white",
+      "secondary": "crystal"
+     },
+     {
+      "layer": "weapon",
+      "style": "staff",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "mage_apprentice",
+   "cls": "Mage",
+   "name": "Apprentice",
+   "torso": [
+    "robe",
+    "cloth_purple",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "robe",
+    "leather",
+    "leather"
+   ],
+   "head": [
+    "wizard_hat",
+    "cloth_purple",
+    "cloth_yellow"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "bob"
+   },
+   "hair_color": "hair_brown",
+   "weapon": "wand",
+   "offhand": "tome",
+   "acc": {
+    "male": "glasses",
+    "female": "glasses"
+   },
+   "skin": {
+    "male": "skin_olive",
+    "female": "skin_tan"
+   },
+   "files": {
+    "male": "presets/mage/mage_apprentice_male.png",
+    "female": "presets/mage/mage_apprentice_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "wizard_hat",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "accessory",
+      "style": "glasses",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "offhand",
+      "style": "tome",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "wand",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "bob",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "wizard_hat",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "accessory",
+      "style": "glasses",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "offhand",
+      "style": "tome",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "wand",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "necro_lich_acolyte",
+   "cls": "Necromancer",
+   "name": "Lich Acolyte",
+   "torso": [
+    "robe",
+    "cloth_black",
+    "cloth_green"
+   ],
+   "legs": [
+    "robe",
+    "leather_dark",
+    "leather_dark"
+   ],
+   "head": [
+    "necro_cowl",
+    "cloth_black",
+    "poison"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "long",
+    "female": "long"
+   },
+   "hair_color": "hair_silver",
+   "weapon": "necro_staff",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_porcelain"
+   },
+   "files": {
+    "male": "presets/necromancer/necro_lich_acolyte_male.png",
+    "female": "presets/necromancer/necro_lich_acolyte_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather_dark",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_black",
+      "secondary": "cloth_green"
+     },
+     {
+      "layer": "head",
+      "style": "necro_cowl",
+      "primary": "cloth_black",
+      "secondary": "poison"
+     },
+     {
+      "layer": "weapon",
+      "style": "necro_staff",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather_dark",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_black",
+      "secondary": "cloth_green"
+     },
+     {
+      "layer": "head",
+      "style": "necro_cowl",
+      "primary": "cloth_black",
+      "secondary": "poison"
+     },
+     {
+      "layer": "weapon",
+      "style": "necro_staff",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "necro_bone_caller",
+   "cls": "Necromancer",
+   "name": "Bone Caller",
+   "torso": [
+    "robe",
+    "cloth_purple",
+    "cloth_black"
+   ],
+   "legs": [
+    "robe",
+    "leather_dark",
+    "leather_dark"
+   ],
+   "head": [
+    "hood",
+    "cloth_purple",
+    "cloth_purple"
+   ],
+   "cape": "tattered_cape",
+   "hair": {
+    "male": "bald",
+    "female": "long"
+   },
+   "hair_color": "hair_black",
+   "weapon": "scythe",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_deep"
+   },
+   "files": {
+    "male": "presets/necromancer/necro_bone_caller_male.png",
+    "female": "presets/necromancer/necro_bone_caller_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather_dark",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_purple",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "cape",
+      "style": "tattered_cape",
+      "primary": "cloth_purple",
+      "secondary": "gold"
+     },
+     {
+      "layer": "head",
+      "style": "hood",
+      "primary": "cloth_purple",
+      "secondary": "cloth_purple"
+     },
+     {
+      "layer": "weapon",
+      "style": "scythe",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_deep",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather_dark",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_purple",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "cape",
+      "style": "tattered_cape",
+      "primary": "cloth_purple",
+      "secondary": "gold"
+     },
+     {
+      "layer": "head",
+      "style": "hood",
+      "primary": "cloth_purple",
+      "secondary": "cloth_purple"
+     },
+     {
+      "layer": "weapon",
+      "style": "scythe",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "necro_grave_warden",
+   "cls": "Necromancer",
+   "name": "Grave Warden",
+   "torso": [
+    "hooded_cloak",
+    "cloth_gray",
+    "cloth_green"
+   ],
+   "legs": [
+    "boots",
+    "cloth_black",
+    "leather_dark"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "sidepart",
+    "female": "braids"
+   },
+   "hair_color": "hair_green",
+   "weapon": "necro_staff",
+   "offhand": "lantern",
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_olive",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/necromancer/necro_grave_warden_male.png",
+    "female": "presets/necromancer/necro_grave_warden_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "hooded_cloak",
+      "primary": "cloth_gray",
+      "secondary": "cloth_green"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_green",
+      "secondary": null
+     },
+     {
+      "layer": "offhand",
+      "style": "lantern",
+      "primary": "cloth_gray",
+      "secondary": "cloth_green"
+     },
+     {
+      "layer": "weapon",
+      "style": "necro_staff",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "hooded_cloak",
+      "primary": "cloth_gray",
+      "secondary": "cloth_green"
+     },
+     {
+      "layer": "hair",
+      "style": "braids",
+      "primary": "hair_green",
+      "secondary": null
+     },
+     {
+      "layer": "offhand",
+      "style": "lantern",
+      "primary": "cloth_gray",
+      "secondary": "cloth_green"
+     },
+     {
+      "layer": "weapon",
+      "style": "necro_staff",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "necro_blood_witch",
+   "cls": "Necromancer",
+   "name": "Blood Witch",
+   "torso": [
+    "robe",
+    "cloth_crimson",
+    "cloth_black"
+   ],
+   "legs": [
+    "robe",
+    "leather_dark",
+    "leather_dark"
+   ],
+   "head": [
+    "wizard_hat",
+    "cloth_black",
+    "cloth_crimson"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "long",
+    "female": "long"
+   },
+   "hair_color": "hair_red",
+   "weapon": "wand",
+   "offhand": "tome",
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_brown",
+    "female": "skin_porcelain"
+   },
+   "files": {
+    "male": "presets/necromancer/necro_blood_witch_male.png",
+    "female": "presets/necromancer/necro_blood_witch_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather_dark",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "wizard_hat",
+      "primary": "cloth_black",
+      "secondary": "cloth_crimson"
+     },
+     {
+      "layer": "offhand",
+      "style": "tome",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "weapon",
+      "style": "wand",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "robe",
+      "primary": "leather_dark",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "robe",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "wizard_hat",
+      "primary": "cloth_black",
+      "secondary": "cloth_crimson"
+     },
+     {
+      "layer": "offhand",
+      "style": "tome",
+      "primary": "cloth_crimson",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "weapon",
+      "style": "wand",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "engineer_tinkerer",
+   "cls": "Engineer",
+   "name": "Tinkerer",
+   "torso": [
+    "overalls",
+    "cloth_blue",
+    "cloth_white"
+   ],
+   "legs": [
+    "boots",
+    "cloth_blue",
+    "leather"
+   ],
+   "head": [
+    "goggles",
+    "cloth_gray",
+    "cloth_gray"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "spiky",
+    "female": "ponytail"
+   },
+   "hair_color": "hair_brown",
+   "weapon": "wrench",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_tan",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/engineer/engineer_tinkerer_male.png",
+    "female": "presets/engineer/engineer_tinkerer_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_blue",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "overalls",
+      "primary": "cloth_blue",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "spiky",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "goggles",
+      "primary": "cloth_gray",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "weapon",
+      "style": "wrench",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_blue",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "overalls",
+      "primary": "cloth_blue",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "goggles",
+      "primary": "cloth_gray",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "weapon",
+      "style": "wrench",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "engineer_steamwright",
+   "cls": "Engineer",
+   "name": "Steamwright",
+   "torso": [
+    "vest",
+    "cloth_brown",
+    "cloth_white"
+   ],
+   "legs": [
+    "boots",
+    "cloth_brown",
+    "leather_dark"
+   ],
+   "head": [
+    "goggles",
+    "cloth_brown",
+    "cloth_brown"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "bun"
+   },
+   "hair_color": "hair_red",
+   "weapon": "hammer",
+   "offhand": null,
+   "acc": {
+    "male": "beard",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_olive"
+   },
+   "files": {
+    "male": "presets/engineer/engineer_steamwright_male.png",
+    "female": "presets/engineer/engineer_steamwright_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_brown",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "vest",
+      "primary": "cloth_brown",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "goggles",
+      "primary": "cloth_brown",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_red",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "weapon",
+      "style": "hammer",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_brown",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "vest",
+      "primary": "cloth_brown",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "bun",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "goggles",
+      "primary": "cloth_brown",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "weapon",
+      "style": "hammer",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "engineer_mechanic",
+   "cls": "Engineer",
+   "name": "Mechanic",
+   "torso": [
+    "overalls",
+    "cloth_orange",
+    "cloth_gray"
+   ],
+   "legs": [
+    "pants",
+    "cloth_orange",
+    "leather"
+   ],
+   "head": [
+    "cap",
+    "cloth_orange",
+    "cloth_gray"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "ponytail"
+   },
+   "hair_color": "hair_black",
+   "weapon": "wrench",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_brown",
+    "female": "skin_deep"
+   },
+   "files": {
+    "male": "presets/engineer/engineer_mechanic_male.png",
+    "female": "presets/engineer/engineer_mechanic_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_orange",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "overalls",
+      "primary": "cloth_orange",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cap",
+      "primary": "cloth_orange",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "weapon",
+      "style": "wrench",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_deep",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_orange",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "overalls",
+      "primary": "cloth_orange",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cap",
+      "primary": "cloth_orange",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "weapon",
+      "style": "wrench",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "engineer_artificer",
+   "cls": "Engineer",
+   "name": "Artificer",
+   "torso": [
+    "leather",
+    "cloth_teal",
+    "cloth_tan"
+   ],
+   "legs": [
+    "boots",
+    "cloth_tan",
+    "leather"
+   ],
+   "head": [
+    "goggles",
+    "cloth_teal",
+    "cloth_teal"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "curly",
+    "female": "curly"
+   },
+   "hair_color": "hair_blonde",
+   "weapon": "blaster",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_tan"
+   },
+   "files": {
+    "male": "presets/engineer/engineer_artificer_male.png",
+    "female": "presets/engineer/engineer_artificer_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_teal",
+      "secondary": "cloth_tan"
+     },
+     {
+      "layer": "hair",
+      "style": "curly",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "goggles",
+      "primary": "cloth_teal",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "weapon",
+      "style": "blaster",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "leather",
+      "primary": "cloth_teal",
+      "secondary": "cloth_tan"
+     },
+     {
+      "layer": "hair",
+      "style": "curly",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "goggles",
+      "primary": "cloth_teal",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "weapon",
+      "style": "blaster",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "merchant_trader",
+   "cls": "Merchant",
+   "name": "Trader",
+   "torso": [
+    "vest",
+    "cloth_green",
+    "cloth_white"
+   ],
+   "legs": [
+    "pants",
+    "cloth_brown",
+    "leather"
+   ],
+   "head": [
+    "turban",
+    "cloth_yellow",
+    "ruby"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "long"
+   },
+   "hair_color": "hair_black",
+   "weapon": null,
+   "offhand": "lantern",
+   "acc": {
+    "male": "beard",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_brown",
+    "female": "skin_olive"
+   },
+   "files": {
+    "male": "presets/merchant/merchant_trader_male.png",
+    "female": "presets/merchant/merchant_trader_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "vest",
+      "primary": "cloth_green",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "turban",
+      "primary": "cloth_yellow",
+      "secondary": "ruby"
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_black",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "offhand",
+      "style": "lantern",
+      "primary": "cloth_green",
+      "secondary": "cloth_white"
+     }
+    ],
+    "female": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "vest",
+      "primary": "cloth_green",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "turban",
+      "primary": "cloth_yellow",
+      "secondary": "ruby"
+     },
+     {
+      "layer": "offhand",
+      "style": "lantern",
+      "primary": "cloth_green",
+      "secondary": "cloth_white"
+     }
+    ]
+   }
+  },
+  {
+   "id": "merchant_shopkeeper",
+   "cls": "Merchant",
+   "name": "Shopkeeper",
+   "torso": [
+    "dress",
+    "cloth_tan",
+    "cloth_white"
+   ],
+   "legs": [
+    "skirt",
+    "cloth_tan",
+    "leather"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "sidepart",
+    "female": "bun"
+   },
+   "hair_color": "hair_brown",
+   "weapon": null,
+   "offhand": null,
+   "acc": {
+    "male": "glasses",
+    "female": "glasses"
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_porcelain"
+   },
+   "files": {
+    "male": "presets/merchant/merchant_shopkeeper_male.png",
+    "female": "presets/merchant/merchant_shopkeeper_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "skirt",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "dress",
+      "primary": "cloth_tan",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "accessory",
+      "style": "glasses",
+      "primary": "cloth_tan",
+      "secondary": "cloth_white"
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "skirt",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "dress",
+      "primary": "cloth_tan",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "bun",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "accessory",
+      "style": "glasses",
+      "primary": "cloth_tan",
+      "secondary": "cloth_white"
+     }
+    ]
+   }
+  },
+  {
+   "id": "merchant_noble",
+   "cls": "Merchant",
+   "name": "Noble Merchant",
+   "torso": [
+    "coat",
+    "cloth_purple",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "boots",
+    "cloth_black",
+    "leather_dark"
+   ],
+   "head": [
+    "circlet",
+    "cloth_purple",
+    "ruby"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "sidepart",
+    "female": "long"
+   },
+   "hair_color": "hair_blonde",
+   "weapon": null,
+   "offhand": "tome",
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/merchant/merchant_noble_male.png",
+    "female": "presets/merchant/merchant_noble_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "coat",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "circlet",
+      "primary": "cloth_purple",
+      "secondary": "ruby"
+     },
+     {
+      "layer": "offhand",
+      "style": "tome",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     }
+    ],
+    "female": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "coat",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "circlet",
+      "primary": "cloth_purple",
+      "secondary": "ruby"
+     },
+     {
+      "layer": "offhand",
+      "style": "tome",
+      "primary": "cloth_purple",
+      "secondary": "cloth_yellow"
+     }
+    ]
+   }
+  },
+  {
+   "id": "merchant_peddler",
+   "cls": "Merchant",
+   "name": "Peddler",
+   "torso": [
+    "tunic",
+    "cloth_orange",
+    "cloth_brown"
+   ],
+   "legs": [
+    "pants",
+    "cloth_tan",
+    "leather"
+   ],
+   "head": [
+    "straw_hat",
+    "cloth_red",
+    "cloth_red"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "curly",
+    "female": "pigtails"
+   },
+   "hair_color": "hair_brown",
+   "weapon": null,
+   "offhand": "lantern",
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_olive",
+    "female": "skin_brown"
+   },
+   "files": {
+    "male": "presets/merchant/merchant_peddler_male.png",
+    "female": "presets/merchant/merchant_peddler_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_orange",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "hair",
+      "style": "curly",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "straw_hat",
+      "primary": "cloth_red",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "offhand",
+      "style": "lantern",
+      "primary": "cloth_orange",
+      "secondary": "cloth_brown"
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_orange",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "hair",
+      "style": "pigtails",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "straw_hat",
+      "primary": "cloth_red",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "offhand",
+      "style": "lantern",
+      "primary": "cloth_orange",
+      "secondary": "cloth_brown"
+     }
+    ]
+   }
+  },
+  {
+   "id": "farmer_homesteader",
+   "cls": "Farmer",
+   "name": "Homesteader",
+   "torso": [
+    "overalls",
+    "cloth_blue",
+    "cloth_red"
+   ],
+   "legs": [
+    "boots",
+    "cloth_blue",
+    "leather"
+   ],
+   "head": [
+    "straw_hat",
+    "cloth_red",
+    "cloth_red"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "braids"
+   },
+   "hair_color": "hair_blonde",
+   "weapon": "hoe",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_tan"
+   },
+   "files": {
+    "male": "presets/farmer/farmer_homesteader_male.png",
+    "female": "presets/farmer/farmer_homesteader_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_blue",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "overalls",
+      "primary": "cloth_blue",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "straw_hat",
+      "primary": "cloth_red",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "weapon",
+      "style": "hoe",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_blue",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "overalls",
+      "primary": "cloth_blue",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "hair",
+      "style": "braids",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "straw_hat",
+      "primary": "cloth_red",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "weapon",
+      "style": "hoe",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "farmer_shepherd",
+   "cls": "Farmer",
+   "name": "Shepherd",
+   "torso": [
+    "tunic",
+    "cloth_tan",
+    "cloth_brown"
+   ],
+   "legs": [
+    "pants",
+    "cloth_brown",
+    "leather"
+   ],
+   "head": [
+    "hood",
+    "cloth_brown",
+    "cloth_brown"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "curly",
+    "female": "long"
+   },
+   "hair_color": "hair_brown",
+   "weapon": "staff",
+   "offhand": null,
+   "acc": {
+    "male": "beard",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_tan",
+    "female": "skin_olive"
+   },
+   "files": {
+    "male": "presets/farmer/farmer_shepherd_male.png",
+    "female": "presets/farmer/farmer_shepherd_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_tan",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "head",
+      "style": "hood",
+      "primary": "cloth_brown",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_brown",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "weapon",
+      "style": "staff",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_brown",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "tunic",
+      "primary": "cloth_tan",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "head",
+      "style": "hood",
+      "primary": "cloth_brown",
+      "secondary": "cloth_brown"
+     },
+     {
+      "layer": "weapon",
+      "style": "staff",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "farmer_orchard",
+   "cls": "Farmer",
+   "name": "Orchard Keeper",
+   "torso": [
+    "dress",
+    "cloth_green",
+    "cloth_white"
+   ],
+   "legs": [
+    "skirt",
+    "cloth_green",
+    "leather"
+   ],
+   "head": [
+    "straw_hat",
+    "cloth_green",
+    "cloth_green"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "pigtails"
+   },
+   "hair_color": "hair_red",
+   "weapon": "hoe",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/farmer/farmer_orchard_male.png",
+    "female": "presets/farmer/farmer_orchard_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "skirt",
+      "primary": "cloth_green",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "dress",
+      "primary": "cloth_green",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "straw_hat",
+      "primary": "cloth_green",
+      "secondary": "cloth_green"
+     },
+     {
+      "layer": "weapon",
+      "style": "hoe",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "skirt",
+      "primary": "cloth_green",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "dress",
+      "primary": "cloth_green",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "pigtails",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "straw_hat",
+      "primary": "cloth_green",
+      "secondary": "cloth_green"
+     },
+     {
+      "layer": "weapon",
+      "style": "hoe",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "farmer_miner",
+   "cls": "Farmer",
+   "name": "Miner",
+   "torso": [
+    "overalls",
+    "cloth_brown",
+    "cloth_gray"
+   ],
+   "legs": [
+    "boots",
+    "cloth_brown",
+    "leather_dark"
+   ],
+   "head": [
+    "cap",
+    "cloth_yellow",
+    "cloth_gray"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "bun"
+   },
+   "hair_color": "hair_black",
+   "weapon": "pickaxe",
+   "offhand": "lantern",
+   "acc": {
+    "male": "beard",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_brown",
+    "female": "skin_deep"
+   },
+   "files": {
+    "male": "presets/farmer/farmer_miner_male.png",
+    "female": "presets/farmer/farmer_miner_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_brown",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "overalls",
+      "primary": "cloth_brown",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cap",
+      "primary": "cloth_yellow",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_black",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "offhand",
+      "style": "lantern",
+      "primary": "cloth_brown",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "weapon",
+      "style": "pickaxe",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_deep",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_brown",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "overalls",
+      "primary": "cloth_brown",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "hair",
+      "style": "bun",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cap",
+      "primary": "cloth_yellow",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "offhand",
+      "style": "lantern",
+      "primary": "cloth_brown",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "weapon",
+      "style": "pickaxe",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "pirate_captain",
+   "cls": "Pirate",
+   "name": "Captain",
+   "torso": [
+    "coat",
+    "cloth_red",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "boots",
+    "cloth_black",
+    "leather_dark"
+   ],
+   "head": [
+    "tricorn",
+    "cloth_black",
+    "cloth_black"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "long",
+    "female": "long"
+   },
+   "hair_color": "hair_black",
+   "weapon": "cutlass",
+   "offhand": null,
+   "acc": {
+    "male": "beard",
+    "female": "eyepatch"
+   },
+   "skin": {
+    "male": "skin_tan",
+    "female": "skin_olive"
+   },
+   "files": {
+    "male": "presets/pirate/pirate_captain_male.png",
+    "female": "presets/pirate/pirate_captain_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "coat",
+      "primary": "cloth_red",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "tricorn",
+      "primary": "cloth_black",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_black",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "cutlass",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "coat",
+      "primary": "cloth_red",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "tricorn",
+      "primary": "cloth_black",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "accessory",
+      "style": "eyepatch",
+      "primary": "cloth_red",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "weapon",
+      "style": "cutlass",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "pirate_deckhand",
+   "cls": "Pirate",
+   "name": "Deckhand",
+   "torso": [
+    "shirt",
+    "cloth_white",
+    "cloth_white"
+   ],
+   "legs": [
+    "shorts",
+    "cloth_navy",
+    "leather"
+   ],
+   "head": [
+    "bandana",
+    "cloth_red",
+    "cloth_red"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "ponytail"
+   },
+   "hair_color": "hair_brown",
+   "weapon": "dagger",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_brown",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/pirate/pirate_deckhand_male.png",
+    "female": "presets/pirate/pirate_deckhand_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "shorts",
+      "primary": "cloth_navy",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "shirt",
+      "primary": "cloth_white",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "bandana",
+      "primary": "cloth_red",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "weapon",
+      "style": "dagger",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "shorts",
+      "primary": "cloth_navy",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "shirt",
+      "primary": "cloth_white",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "bandana",
+      "primary": "cloth_red",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "weapon",
+      "style": "dagger",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "pirate_quartermaster",
+   "cls": "Pirate",
+   "name": "Quartermaster",
+   "torso": [
+    "vest",
+    "cloth_navy",
+    "cloth_white"
+   ],
+   "legs": [
+    "boots",
+    "cloth_navy",
+    "leather"
+   ],
+   "head": [
+    "bandana",
+    "cloth_navy",
+    "cloth_navy"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "spiky",
+    "female": "braids"
+   },
+   "hair_color": "hair_red",
+   "weapon": "cutlass",
+   "offhand": null,
+   "acc": {
+    "male": "eyepatch",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_deep"
+   },
+   "files": {
+    "male": "presets/pirate/pirate_quartermaster_male.png",
+    "female": "presets/pirate/pirate_quartermaster_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_navy",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "vest",
+      "primary": "cloth_navy",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "spiky",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "bandana",
+      "primary": "cloth_navy",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "accessory",
+      "style": "eyepatch",
+      "primary": "cloth_navy",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "weapon",
+      "style": "cutlass",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_deep",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "boots",
+      "primary": "cloth_navy",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "vest",
+      "primary": "cloth_navy",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "braids",
+      "primary": "hair_red",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "bandana",
+      "primary": "cloth_navy",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "weapon",
+      "style": "cutlass",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "pirate_corsair",
+   "cls": "Pirate",
+   "name": "Corsair",
+   "torso": [
+    "coat",
+    "cloth_teal",
+    "cloth_yellow"
+   ],
+   "legs": [
+    "pants",
+    "cloth_tan",
+    "leather"
+   ],
+   "head": [
+    "tricorn",
+    "cloth_teal",
+    "cloth_teal"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "sidepart",
+    "female": "long"
+   },
+   "hair_color": "hair_blonde",
+   "weapon": "blaster",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_olive",
+    "female": "skin_tan"
+   },
+   "files": {
+    "male": "presets/pirate/pirate_corsair_male.png",
+    "female": "presets/pirate/pirate_corsair_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "coat",
+      "primary": "cloth_teal",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "tricorn",
+      "primary": "cloth_teal",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "weapon",
+      "style": "blaster",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "hair_back",
+      "style": "long",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "coat",
+      "primary": "cloth_teal",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "hair",
+      "style": "long",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "tricorn",
+      "primary": "cloth_teal",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "weapon",
+      "style": "blaster",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scientist_chemist",
+   "cls": "Scientist",
+   "name": "Chemist",
+   "torso": [
+    "labcoat",
+    "cloth_blue",
+    "cloth_red"
+   ],
+   "legs": [
+    "pants",
+    "cloth_gray",
+    "leather"
+   ],
+   "head": [
+    "goggles",
+    "cloth_gray",
+    "cloth_gray"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "curly",
+    "female": "bun"
+   },
+   "hair_color": "hair_silver",
+   "weapon": "flask",
+   "offhand": null,
+   "acc": {
+    "male": "glasses",
+    "female": null
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_brown"
+   },
+   "files": {
+    "male": "presets/scientist/scientist_chemist_male.png",
+    "female": "presets/scientist/scientist_chemist_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_gray",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "labcoat",
+      "primary": "cloth_blue",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "hair",
+      "style": "curly",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "goggles",
+      "primary": "cloth_gray",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "accessory",
+      "style": "glasses",
+      "primary": "cloth_blue",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "weapon",
+      "style": "flask",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_gray",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "labcoat",
+      "primary": "cloth_blue",
+      "secondary": "cloth_red"
+     },
+     {
+      "layer": "hair",
+      "style": "bun",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "goggles",
+      "primary": "cloth_gray",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "weapon",
+      "style": "flask",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scientist_biologist",
+   "cls": "Scientist",
+   "name": "Biologist",
+   "torso": [
+    "labcoat",
+    "cloth_green",
+    "cloth_teal"
+   ],
+   "legs": [
+    "pants",
+    "cloth_tan",
+    "leather"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "sidepart",
+    "female": "ponytail"
+   },
+   "hair_color": "hair_brown",
+   "weapon": "scanner",
+   "offhand": null,
+   "acc": {
+    "male": "glasses",
+    "female": "glasses"
+   },
+   "skin": {
+    "male": "skin_tan",
+    "female": "skin_porcelain"
+   },
+   "files": {
+    "male": "presets/scientist/scientist_biologist_male.png",
+    "female": "presets/scientist/scientist_biologist_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "labcoat",
+      "primary": "cloth_green",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "accessory",
+      "style": "glasses",
+      "primary": "cloth_green",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "weapon",
+      "style": "scanner",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_tan",
+      "secondary": "leather"
+     },
+     {
+      "layer": "torso",
+      "style": "labcoat",
+      "primary": "cloth_green",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_brown",
+      "secondary": null
+     },
+     {
+      "layer": "accessory",
+      "style": "glasses",
+      "primary": "cloth_green",
+      "secondary": "cloth_teal"
+     },
+     {
+      "layer": "weapon",
+      "style": "scanner",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scientist_physicist",
+   "cls": "Scientist",
+   "name": "Physicist",
+   "torso": [
+    "labcoat",
+    "cloth_purple",
+    "cloth_navy"
+   ],
+   "legs": [
+    "pants",
+    "cloth_black",
+    "leather_dark"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "spiky",
+    "female": "bob"
+   },
+   "hair_color": "hair_silver",
+   "weapon": "scanner",
+   "offhand": "tome",
+   "acc": {
+    "male": "beard",
+    "female": "glasses"
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_olive"
+   },
+   "files": {
+    "male": "presets/scientist/scientist_physicist_male.png",
+    "female": "presets/scientist/scientist_physicist_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "labcoat",
+      "primary": "cloth_purple",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "hair",
+      "style": "spiky",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "accessory",
+      "style": "beard",
+      "primary": "hair_silver",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "offhand",
+      "style": "tome",
+      "primary": "cloth_purple",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "weapon",
+      "style": "scanner",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "labcoat",
+      "primary": "cloth_purple",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "hair",
+      "style": "bob",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "accessory",
+      "style": "glasses",
+      "primary": "cloth_purple",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "offhand",
+      "style": "tome",
+      "primary": "cloth_purple",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "weapon",
+      "style": "scanner",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "scientist_roboticist",
+   "cls": "Scientist",
+   "name": "Roboticist",
+   "torso": [
+    "labcoat",
+    "cloth_orange",
+    "cloth_gray"
+   ],
+   "legs": [
+    "cyber",
+    "cloth_gray",
+    "neon_cyan"
+   ],
+   "head": [
+    "goggles",
+    "cloth_gray",
+    "cloth_gray"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "mohawk",
+    "female": "pigtails"
+   },
+   "hair_color": "hair_blue",
+   "weapon": "wrench",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_deep",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/scientist/scientist_roboticist_male.png",
+    "female": "presets/scientist/scientist_roboticist_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_deep",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "cyber",
+      "primary": "cloth_gray",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "torso",
+      "style": "labcoat",
+      "primary": "cloth_orange",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "hair",
+      "style": "mohawk",
+      "primary": "hair_blue",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "goggles",
+      "primary": "cloth_gray",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "weapon",
+      "style": "wrench",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "cyber",
+      "primary": "cloth_gray",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "torso",
+      "style": "labcoat",
+      "primary": "cloth_orange",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "hair",
+      "style": "pigtails",
+      "primary": "hair_blue",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "goggles",
+      "primary": "cloth_gray",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "weapon",
+      "style": "wrench",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "space_astronaut",
+   "cls": "Space Explorer",
+   "name": "Astronaut",
+   "torso": [
+    "spacesuit",
+    "cloth_orange",
+    "cloth_gray"
+   ],
+   "legs": [
+    "suit",
+    "cloth_orange",
+    "neon_cyan"
+   ],
+   "head": [
+    "space_helmet",
+    "cloth_orange",
+    "cloth_orange"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "bob"
+   },
+   "hair_color": "hair_brown",
+   "weapon": "scanner",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_tan"
+   },
+   "files": {
+    "male": "presets/space_explorer/space_astronaut_male.png",
+    "female": "presets/space_explorer/space_astronaut_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "suit",
+      "primary": "cloth_orange",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "torso",
+      "style": "spacesuit",
+      "primary": "cloth_orange",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "head",
+      "style": "space_helmet",
+      "primary": "cloth_orange",
+      "secondary": "cloth_orange"
+     },
+     {
+      "layer": "weapon",
+      "style": "scanner",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "suit",
+      "primary": "cloth_orange",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "torso",
+      "style": "spacesuit",
+      "primary": "cloth_orange",
+      "secondary": "cloth_gray"
+     },
+     {
+      "layer": "head",
+      "style": "space_helmet",
+      "primary": "cloth_orange",
+      "secondary": "cloth_orange"
+     },
+     {
+      "layer": "weapon",
+      "style": "scanner",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "space_marine",
+   "cls": "Space Explorer",
+   "name": "Star Marine",
+   "torso": [
+    "spacesuit",
+    "cloth_green",
+    "cloth_black"
+   ],
+   "legs": [
+    "suit",
+    "cloth_green",
+    "neon_green"
+   ],
+   "head": [
+    "space_helmet",
+    "cloth_green",
+    "cloth_green"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "short"
+   },
+   "hair_color": "hair_black",
+   "weapon": "blaster",
+   "offhand": "energy_shield",
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_brown",
+    "female": "skin_deep"
+   },
+   "files": {
+    "male": "presets/space_explorer/space_marine_male.png",
+    "female": "presets/space_explorer/space_marine_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "suit",
+      "primary": "cloth_green",
+      "secondary": "neon_green"
+     },
+     {
+      "layer": "torso",
+      "style": "spacesuit",
+      "primary": "cloth_green",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "head",
+      "style": "space_helmet",
+      "primary": "cloth_green",
+      "secondary": "cloth_green"
+     },
+     {
+      "layer": "offhand",
+      "style": "energy_shield",
+      "primary": "cloth_green",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "weapon",
+      "style": "blaster",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_deep",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "suit",
+      "primary": "cloth_green",
+      "secondary": "neon_green"
+     },
+     {
+      "layer": "torso",
+      "style": "spacesuit",
+      "primary": "cloth_green",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "head",
+      "style": "space_helmet",
+      "primary": "cloth_green",
+      "secondary": "cloth_green"
+     },
+     {
+      "layer": "offhand",
+      "style": "energy_shield",
+      "primary": "cloth_green",
+      "secondary": "cloth_black"
+     },
+     {
+      "layer": "weapon",
+      "style": "blaster",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "space_pilot",
+   "cls": "Space Explorer",
+   "name": "Pilot",
+   "torso": [
+    "spacesuit",
+    "cloth_blue",
+    "cloth_navy"
+   ],
+   "legs": [
+    "suit",
+    "cloth_blue",
+    "neon_cyan"
+   ],
+   "head": [
+    "cap",
+    "cloth_navy",
+    "cloth_yellow"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "sidepart",
+    "female": "ponytail"
+   },
+   "hair_color": "hair_blonde",
+   "weapon": "blaster",
+   "offhand": null,
+   "acc": {
+    "male": "scarf",
+    "female": "scarf"
+   },
+   "skin": {
+    "male": "skin_porcelain",
+    "female": "skin_olive"
+   },
+   "files": {
+    "male": "presets/space_explorer/space_pilot_male.png",
+    "female": "presets/space_explorer/space_pilot_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "suit",
+      "primary": "cloth_blue",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "torso",
+      "style": "spacesuit",
+      "primary": "cloth_blue",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cap",
+      "primary": "cloth_navy",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "accessory",
+      "style": "scarf",
+      "primary": "cloth_blue",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "weapon",
+      "style": "blaster",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "suit",
+      "primary": "cloth_blue",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "torso",
+      "style": "spacesuit",
+      "primary": "cloth_blue",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_blonde",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cap",
+      "primary": "cloth_navy",
+      "secondary": "cloth_yellow"
+     },
+     {
+      "layer": "accessory",
+      "style": "scarf",
+      "primary": "cloth_blue",
+      "secondary": "cloth_navy"
+     },
+     {
+      "layer": "weapon",
+      "style": "blaster",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "space_xenobotanist",
+   "cls": "Space Explorer",
+   "name": "Xenobotanist",
+   "torso": [
+    "spacesuit",
+    "cloth_teal",
+    "cloth_white"
+   ],
+   "legs": [
+    "suit",
+    "cloth_teal",
+    "neon_green"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "curly",
+    "female": "braids"
+   },
+   "hair_color": "hair_green",
+   "weapon": "scanner",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_olive",
+    "female": "skin_brown"
+   },
+   "files": {
+    "male": "presets/space_explorer/space_xenobotanist_male.png",
+    "female": "presets/space_explorer/space_xenobotanist_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "suit",
+      "primary": "cloth_teal",
+      "secondary": "neon_green"
+     },
+     {
+      "layer": "torso",
+      "style": "spacesuit",
+      "primary": "cloth_teal",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "curly",
+      "primary": "hair_green",
+      "secondary": null
+     },
+     {
+      "layer": "weapon",
+      "style": "scanner",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "suit",
+      "primary": "cloth_teal",
+      "secondary": "neon_green"
+     },
+     {
+      "layer": "torso",
+      "style": "spacesuit",
+      "primary": "cloth_teal",
+      "secondary": "cloth_white"
+     },
+     {
+      "layer": "hair",
+      "style": "braids",
+      "primary": "hair_green",
+      "secondary": null
+     },
+     {
+      "layer": "weapon",
+      "style": "scanner",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cyber_netrunner",
+   "cls": "Cyberpunk",
+   "name": "Netrunner",
+   "torso": [
+    "cyberjacket",
+    "cloth_purple",
+    "neon_pink"
+   ],
+   "legs": [
+    "cyber",
+    "cloth_black",
+    "neon_pink"
+   ],
+   "head": [
+    "cyber_visor",
+    "neon_pink",
+    "neon_pink"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "mohawk",
+    "female": "bob"
+   },
+   "hair_color": "hair_pink",
+   "weapon": "katana",
+   "offhand": null,
+   "acc": {
+    "male": "headphones",
+    "female": "headphones"
+   },
+   "skin": {
+    "male": "skin_light",
+    "female": "skin_tan"
+   },
+   "files": {
+    "male": "presets/cyberpunk/cyber_netrunner_male.png",
+    "female": "presets/cyberpunk/cyber_netrunner_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "cyber",
+      "primary": "cloth_black",
+      "secondary": "neon_pink"
+     },
+     {
+      "layer": "torso",
+      "style": "cyberjacket",
+      "primary": "cloth_purple",
+      "secondary": "neon_pink"
+     },
+     {
+      "layer": "hair",
+      "style": "mohawk",
+      "primary": "hair_pink",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cyber_visor",
+      "primary": "neon_pink",
+      "secondary": "neon_pink"
+     },
+     {
+      "layer": "accessory",
+      "style": "headphones",
+      "primary": "cloth_purple",
+      "secondary": "neon_pink"
+     },
+     {
+      "layer": "weapon",
+      "style": "katana",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "cyber",
+      "primary": "cloth_black",
+      "secondary": "neon_pink"
+     },
+     {
+      "layer": "torso",
+      "style": "cyberjacket",
+      "primary": "cloth_purple",
+      "secondary": "neon_pink"
+     },
+     {
+      "layer": "hair",
+      "style": "bob",
+      "primary": "hair_pink",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cyber_visor",
+      "primary": "neon_pink",
+      "secondary": "neon_pink"
+     },
+     {
+      "layer": "accessory",
+      "style": "headphones",
+      "primary": "cloth_purple",
+      "secondary": "neon_pink"
+     },
+     {
+      "layer": "weapon",
+      "style": "katana",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cyber_street_samurai",
+   "cls": "Cyberpunk",
+   "name": "Street Samurai",
+   "torso": [
+    "cyberjacket",
+    "cloth_red",
+    "neon_cyan"
+   ],
+   "legs": [
+    "cyber",
+    "cloth_gray",
+    "neon_cyan"
+   ],
+   "head": null,
+   "cape": null,
+   "hair": {
+    "male": "spiky",
+    "female": "ponytail"
+   },
+   "hair_color": "hair_black",
+   "weapon": "katana",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_olive",
+    "female": "skin_porcelain"
+   },
+   "files": {
+    "male": "presets/cyberpunk/cyber_street_samurai_male.png",
+    "female": "presets/cyberpunk/cyber_street_samurai_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_olive",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "cyber",
+      "primary": "cloth_gray",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "torso",
+      "style": "cyberjacket",
+      "primary": "cloth_red",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "hair",
+      "style": "spiky",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "weapon",
+      "style": "katana",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_porcelain",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "cyber",
+      "primary": "cloth_gray",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "torso",
+      "style": "cyberjacket",
+      "primary": "cloth_red",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "hair",
+      "style": "ponytail",
+      "primary": "hair_black",
+      "secondary": null
+     },
+     {
+      "layer": "weapon",
+      "style": "katana",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cyber_fixer",
+   "cls": "Cyberpunk",
+   "name": "Fixer",
+   "torso": [
+    "cyberjacket",
+    "cloth_yellow",
+    "neon_green"
+   ],
+   "legs": [
+    "pants",
+    "cloth_black",
+    "leather_dark"
+   ],
+   "head": [
+    "cyber_visor",
+    "neon_green",
+    "neon_green"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "sidepart",
+    "female": "sidepart"
+   },
+   "hair_color": "hair_silver",
+   "weapon": "blaster",
+   "offhand": null,
+   "acc": {
+    "male": null,
+    "female": null
+   },
+   "skin": {
+    "male": "skin_deep",
+    "female": "skin_brown"
+   },
+   "files": {
+    "male": "presets/cyberpunk/cyber_fixer_male.png",
+    "female": "presets/cyberpunk/cyber_fixer_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_deep",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "cyberjacket",
+      "primary": "cloth_yellow",
+      "secondary": "neon_green"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cyber_visor",
+      "primary": "neon_green",
+      "secondary": "neon_green"
+     },
+     {
+      "layer": "weapon",
+      "style": "blaster",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_brown",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "pants",
+      "primary": "cloth_black",
+      "secondary": "leather_dark"
+     },
+     {
+      "layer": "torso",
+      "style": "cyberjacket",
+      "primary": "cloth_yellow",
+      "secondary": "neon_green"
+     },
+     {
+      "layer": "hair",
+      "style": "sidepart",
+      "primary": "hair_silver",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cyber_visor",
+      "primary": "neon_green",
+      "secondary": "neon_green"
+     },
+     {
+      "layer": "weapon",
+      "style": "blaster",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "cyber_courier",
+   "cls": "Cyberpunk",
+   "name": "Courier",
+   "torso": [
+    "cyberjacket",
+    "cloth_teal",
+    "neon_cyan"
+   ],
+   "legs": [
+    "cyber",
+    "cloth_navy",
+    "neon_cyan"
+   ],
+   "head": [
+    "cap",
+    "cloth_black",
+    "neon_cyan"
+   ],
+   "cape": null,
+   "hair": {
+    "male": "short",
+    "female": "pigtails"
+   },
+   "hair_color": "hair_blue",
+   "weapon": "dagger",
+   "offhand": null,
+   "acc": {
+    "male": "headphones",
+    "female": "headphones"
+   },
+   "skin": {
+    "male": "skin_tan",
+    "female": "skin_light"
+   },
+   "files": {
+    "male": "presets/cyberpunk/cyber_courier_male.png",
+    "female": "presets/cyberpunk/cyber_courier_female.png"
+   },
+   "layer_recipe": {
+    "male": [
+     {
+      "layer": "body",
+      "style": "skin_tan",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "cyber",
+      "primary": "cloth_navy",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "torso",
+      "style": "cyberjacket",
+      "primary": "cloth_teal",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "hair",
+      "style": "short",
+      "primary": "hair_blue",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cap",
+      "primary": "cloth_black",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "accessory",
+      "style": "headphones",
+      "primary": "cloth_teal",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "weapon",
+      "style": "dagger",
+      "primary": null,
+      "secondary": null
+     }
+    ],
+    "female": [
+     {
+      "layer": "body",
+      "style": "skin_light",
+      "primary": null,
+      "secondary": null
+     },
+     {
+      "layer": "legs",
+      "style": "cyber",
+      "primary": "cloth_navy",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "torso",
+      "style": "cyberjacket",
+      "primary": "cloth_teal",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "hair",
+      "style": "pigtails",
+      "primary": "hair_blue",
+      "secondary": null
+     },
+     {
+      "layer": "head",
+      "style": "cap",
+      "primary": "cloth_black",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "accessory",
+      "style": "headphones",
+      "primary": "cloth_teal",
+      "secondary": "neon_cyan"
+     },
+     {
+      "layer": "weapon",
+      "style": "dagger",
+      "primary": null,
+      "secondary": null
+     }
+    ]
+   }
+  }
+ ]
+}

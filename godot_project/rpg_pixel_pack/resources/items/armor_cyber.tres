@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://rpg_pixel_pack/scripts/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://rpg_pixel_pack/equipment/armor/armor_cyber.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+id = "armor_cyber"
+name = "Cyber Suit"
+category = "armor"
+icon = ExtResource("2_icon")
+slot = "torso"
+layer_style = "cyberjacket"
+primary_ramp = "cloth_black"
+secondary_ramp = "neon_cyan"
+attack = 0
+defense = 6
+magic = 0
+value = 60

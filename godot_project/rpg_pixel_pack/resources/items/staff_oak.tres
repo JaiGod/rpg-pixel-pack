@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://rpg_pixel_pack/scripts/item_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://rpg_pixel_pack/equipment/staves/staff_oak.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_script")
+id = "staff_oak"
+name = "Oak Staff"
+category = "staves"
+icon = ExtResource("2_icon")
+slot = "weapon"
+layer_style = "staff"
+primary_ramp = ""
+secondary_ramp = ""
+attack = 7
+defense = 0
+magic = 15
+value = 125

@@ -1,0 +1,278 @@
+{
+ "layout": "horizontal strip",
+ "items": [
+  {
+   "id": "water",
+   "category": "water",
+   "name": "Water Tile",
+   "file": "animations/water/water.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  },
+  {
+   "id": "water_deep",
+   "category": "water",
+   "name": "Deep Water Tile",
+   "file": "animations/water/water_deep.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 4,
+   "fps": 5,
+   "loop": true
+  },
+  {
+   "id": "swamp_water",
+   "category": "water",
+   "name": "Swamp Water Tile",
+   "file": "animations/water/swamp_water.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 4,
+   "fps": 4,
+   "loop": true
+  },
+  {
+   "id": "lava",
+   "category": "water",
+   "name": "Lava Tile",
+   "file": "animations/water/lava.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 4,
+   "fps": 5,
+   "loop": true
+  },
+  {
+   "id": "waterfall",
+   "category": "water",
+   "name": "Waterfall",
+   "file": "animations/water/waterfall.png",
+   "frame_size": [
+    32,
+    64
+   ],
+   "frames": 4,
+   "fps": 8,
+   "loop": true
+  },
+  {
+   "id": "campfire",
+   "category": "fire",
+   "name": "Campfire",
+   "file": "animations/fire/campfire.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 6,
+   "fps": 10,
+   "loop": true
+  },
+  {
+   "id": "torch_wall",
+   "category": "torches",
+   "name": "Wall Torch",
+   "file": "animations/torches/torch_wall.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 4,
+   "fps": 8,
+   "loop": true
+  },
+  {
+   "id": "torch_stand",
+   "category": "torches",
+   "name": "Standing Torch",
+   "file": "animations/torches/torch_stand.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 4,
+   "fps": 8,
+   "loop": true
+  },
+  {
+   "id": "brazier",
+   "category": "fire",
+   "name": "Brazier",
+   "file": "animations/fire/brazier.png",
+   "frame_size": [
+    32,
+    64
+   ],
+   "frames": 4,
+   "fps": 8,
+   "loop": true
+  },
+  {
+   "id": "door_wood",
+   "category": "doors",
+   "name": "Wooden Door",
+   "file": "animations/doors/door_wood.png",
+   "frame_size": [
+    32,
+    64
+   ],
+   "frames": 4,
+   "fps": 10,
+   "loop": false
+  },
+  {
+   "id": "door_gate",
+   "category": "doors",
+   "name": "Castle Portcullis",
+   "file": "animations/doors/door_gate.png",
+   "frame_size": [
+    64,
+    64
+   ],
+   "frames": 4,
+   "fps": 8,
+   "loop": false
+  },
+  {
+   "id": "door_scifi",
+   "category": "doors",
+   "name": "Sliding Airlock",
+   "file": "animations/doors/door_scifi.png",
+   "frame_size": [
+    32,
+    64
+   ],
+   "frames": 4,
+   "fps": 12,
+   "loop": false
+  },
+  {
+   "id": "portal_magic",
+   "category": "portals",
+   "name": "Arcane Portal",
+   "file": "animations/portals/portal_magic.png",
+   "frame_size": [
+    64,
+    64
+   ],
+   "frames": 8,
+   "fps": 10,
+   "loop": true
+  },
+  {
+   "id": "portal_scifi",
+   "category": "portals",
+   "name": "Warp Gate",
+   "file": "animations/portals/portal_scifi.png",
+   "frame_size": [
+    64,
+    64
+   ],
+   "frames": 8,
+   "fps": 12,
+   "loop": true
+  },
+  {
+   "id": "chest_open",
+   "category": "props",
+   "name": "Chest Opening",
+   "file": "animations/props/chest_open.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 4,
+   "fps": 10,
+   "loop": false
+  },
+  {
+   "id": "crystal_glow",
+   "category": "props",
+   "name": "Glowing Crystals",
+   "file": "animations/props/crystal_glow.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  },
+  {
+   "id": "flag_red",
+   "category": "props",
+   "name": "Waving Flag (Red)",
+   "file": "animations/props/flag_red.png",
+   "frame_size": [
+    32,
+    64
+   ],
+   "frames": 4,
+   "fps": 8,
+   "loop": true
+  },
+  {
+   "id": "flag_blue",
+   "category": "props",
+   "name": "Waving Flag (Blue)",
+   "file": "animations/props/flag_blue.png",
+   "frame_size": [
+    32,
+    64
+   ],
+   "frames": 4,
+   "fps": 8,
+   "loop": true
+  },
+  {
+   "id": "coin_spin",
+   "category": "pickups",
+   "name": "Spinning Coin",
+   "file": "animations/pickups/coin_spin.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 6,
+   "fps": 10,
+   "loop": true
+  },
+  {
+   "id": "smoke_puff",
+   "category": "effects",
+   "name": "Smoke Puff",
+   "file": "animations/effects/smoke_puff.png",
+   "frame_size": [
+    32,
+    32
+   ],
+   "frames": 6,
+   "fps": 10,
+   "loop": false
+  },
+  {
+   "id": "windmill",
+   "category": "props",
+   "name": "Windmill",
+   "file": "animations/props/windmill.png",
+   "frame_size": [
+    64,
+    96
+   ],
+   "frames": 4,
+   "fps": 6,
+   "loop": true
+  }
+ ]
+}

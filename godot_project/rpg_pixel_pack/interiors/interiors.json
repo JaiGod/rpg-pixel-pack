@@ -1,0 +1,427 @@
+{
+ "tileset": "interiors/tileset/interior_tileset.png",
+ "tileset_layout": {
+  "row0": [
+   "planks",
+   "planks_dark",
+   "stone",
+   "carpet",
+   "checker",
+   "metal",
+   "lab",
+   "cobble"
+  ],
+  "row1": [
+   "wallpaper (upper)",
+   "wood_panel (upper)",
+   "stone (upper)",
+   "brick (upper)",
+   "plaster (upper)",
+   "tech (upper)",
+   "lab (upper)",
+   "dungeon (upper)"
+  ],
+  "row2": [
+   "wallpaper (lower)",
+   "wood_panel (lower)",
+   "stone (lower)",
+   "brick (lower)",
+   "plaster (lower)",
+   "tech (lower)",
+   "lab (lower)",
+   "dungeon (lower)"
+  ],
+  "row3": [
+   "wall cap",
+   "door mat",
+   "shadowed floor"
+  ]
+ },
+ "rooms": [
+  {
+   "id": "bedroom_cottage",
+   "category": "bedrooms",
+   "name": "Cottage Bedroom",
+   "file": "interiors/rooms/bedrooms/bedroom_cottage.png",
+   "layout": "interiors/rooms/bedrooms/bedroom_cottage.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "bedroom_royal",
+   "category": "bedrooms",
+   "name": "Royal Bedchamber",
+   "file": "interiors/rooms/bedrooms/bedroom_royal.png",
+   "layout": "interiors/rooms/bedrooms/bedroom_royal.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "bedroom_inn",
+   "category": "bedrooms",
+   "name": "Inn Room",
+   "file": "interiors/rooms/bedrooms/bedroom_inn.png",
+   "layout": "interiors/rooms/bedrooms/bedroom_inn.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "bedroom_scifi",
+   "category": "bedrooms",
+   "name": "Crew Quarters",
+   "file": "interiors/rooms/bedrooms/bedroom_scifi.png",
+   "layout": "interiors/rooms/bedrooms/bedroom_scifi.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "bedroom_hut",
+   "category": "bedrooms",
+   "name": "Peasant Hut",
+   "file": "interiors/rooms/bedrooms/bedroom_hut.png",
+   "layout": "interiors/rooms/bedrooms/bedroom_hut.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "kitchen_farmhouse",
+   "category": "kitchens",
+   "name": "Farmhouse Kitchen",
+   "file": "interiors/rooms/kitchens/kitchen_farmhouse.png",
+   "layout": "interiors/rooms/kitchens/kitchen_farmhouse.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "kitchen_castle",
+   "category": "kitchens",
+   "name": "Castle Kitchen",
+   "file": "interiors/rooms/kitchens/kitchen_castle.png",
+   "layout": "interiors/rooms/kitchens/kitchen_castle.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "kitchen_tavern",
+   "category": "kitchens",
+   "name": "Tavern Kitchen",
+   "file": "interiors/rooms/kitchens/kitchen_tavern.png",
+   "layout": "interiors/rooms/kitchens/kitchen_tavern.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "kitchen_galley",
+   "category": "kitchens",
+   "name": "Starship Galley",
+   "file": "interiors/rooms/kitchens/kitchen_galley.png",
+   "layout": "interiors/rooms/kitchens/kitchen_galley.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "kitchen_witch",
+   "category": "kitchens",
+   "name": "Witch's Kitchen",
+   "file": "interiors/rooms/kitchens/kitchen_witch.png",
+   "layout": "interiors/rooms/kitchens/kitchen_witch.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "tavern_common",
+   "category": "taverns",
+   "name": "Common Room",
+   "file": "interiors/rooms/taverns/tavern_common.png",
+   "layout": "interiors/rooms/taverns/tavern_common.json",
+   "size_tiles": [
+    11,
+    8
+   ]
+  },
+  {
+   "id": "tavern_harbor",
+   "category": "taverns",
+   "name": "Harbor Tavern",
+   "file": "interiors/rooms/taverns/tavern_harbor.png",
+   "layout": "interiors/rooms/taverns/tavern_harbor.json",
+   "size_tiles": [
+    11,
+    8
+   ]
+  },
+  {
+   "id": "tavern_noble",
+   "category": "taverns",
+   "name": "Noble Lounge",
+   "file": "interiors/rooms/taverns/tavern_noble.png",
+   "layout": "interiors/rooms/taverns/tavern_noble.json",
+   "size_tiles": [
+    11,
+    8
+   ]
+  },
+  {
+   "id": "tavern_dive",
+   "category": "taverns",
+   "name": "Cyber Dive Bar",
+   "file": "interiors/rooms/taverns/tavern_dive.png",
+   "layout": "interiors/rooms/taverns/tavern_dive.json",
+   "size_tiles": [
+    11,
+    8
+   ]
+  },
+  {
+   "id": "tavern_dwarf",
+   "category": "taverns",
+   "name": "Dwarven Mead Hall",
+   "file": "interiors/rooms/taverns/tavern_dwarf.png",
+   "layout": "interiors/rooms/taverns/tavern_dwarf.json",
+   "size_tiles": [
+    11,
+    8
+   ]
+  },
+  {
+   "id": "workshop_blacksmith",
+   "category": "workshops",
+   "name": "Blacksmith Workshop",
+   "file": "interiors/rooms/workshops/workshop_blacksmith.png",
+   "layout": "interiors/rooms/workshops/workshop_blacksmith.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "workshop_carpenter",
+   "category": "workshops",
+   "name": "Carpenter Shop",
+   "file": "interiors/rooms/workshops/workshop_carpenter.png",
+   "layout": "interiors/rooms/workshops/workshop_carpenter.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "workshop_garage",
+   "category": "workshops",
+   "name": "Engineer Garage",
+   "file": "interiors/rooms/workshops/workshop_garage.png",
+   "layout": "interiors/rooms/workshops/workshop_garage.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "workshop_alchemy",
+   "category": "workshops",
+   "name": "Alchemy Lab",
+   "file": "interiors/rooms/workshops/workshop_alchemy.png",
+   "layout": "interiors/rooms/workshops/workshop_alchemy.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "workshop_tinker",
+   "category": "workshops",
+   "name": "Tinker's Bench",
+   "file": "interiors/rooms/workshops/workshop_tinker.png",
+   "layout": "interiors/rooms/workshops/workshop_tinker.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "library_grand",
+   "category": "libraries",
+   "name": "Grand Library",
+   "file": "interiors/rooms/libraries/library_grand.png",
+   "layout": "interiors/rooms/libraries/library_grand.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "library_study",
+   "category": "libraries",
+   "name": "Scholar's Study",
+   "file": "interiors/rooms/libraries/library_study.png",
+   "layout": "interiors/rooms/libraries/library_study.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "library_arcane",
+   "category": "libraries",
+   "name": "Arcane Archive",
+   "file": "interiors/rooms/libraries/library_arcane.png",
+   "layout": "interiors/rooms/libraries/library_arcane.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "library_monastery",
+   "category": "libraries",
+   "name": "Monastery Scriptorium",
+   "file": "interiors/rooms/libraries/library_monastery.png",
+   "layout": "interiors/rooms/libraries/library_monastery.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "library_datavault",
+   "category": "libraries",
+   "name": "Data Vault",
+   "file": "interiors/rooms/libraries/library_datavault.png",
+   "layout": "interiors/rooms/libraries/library_datavault.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "lab_bio",
+   "category": "laboratories",
+   "name": "Bio Lab",
+   "file": "interiors/rooms/laboratories/lab_bio.png",
+   "layout": "interiors/rooms/laboratories/lab_bio.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "lab_chem",
+   "category": "laboratories",
+   "name": "Chemistry Lab",
+   "file": "interiors/rooms/laboratories/lab_chem.png",
+   "layout": "interiors/rooms/laboratories/lab_chem.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "lab_robotics",
+   "category": "laboratories",
+   "name": "Robotics Lab",
+   "file": "interiors/rooms/laboratories/lab_robotics.png",
+   "layout": "interiors/rooms/laboratories/lab_robotics.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "lab_physics",
+   "category": "laboratories",
+   "name": "Physics Lab",
+   "file": "interiors/rooms/laboratories/lab_physics.png",
+   "layout": "interiors/rooms/laboratories/lab_physics.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "lab_xeno",
+   "category": "laboratories",
+   "name": "Xeno Containment",
+   "file": "interiors/rooms/laboratories/lab_xeno.png",
+   "layout": "interiors/rooms/laboratories/lab_xeno.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "command_bridge",
+   "category": "command_centers",
+   "name": "Starship Bridge",
+   "file": "interiors/rooms/command_centers/command_bridge.png",
+   "layout": "interiors/rooms/command_centers/command_bridge.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "command_war_room",
+   "category": "command_centers",
+   "name": "War Room",
+   "file": "interiors/rooms/command_centers/command_war_room.png",
+   "layout": "interiors/rooms/command_centers/command_war_room.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "command_ops",
+   "category": "command_centers",
+   "name": "Ops Center",
+   "file": "interiors/rooms/command_centers/command_ops.png",
+   "layout": "interiors/rooms/command_centers/command_ops.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "command_colony",
+   "category": "command_centers",
+   "name": "Colony Control",
+   "file": "interiors/rooms/command_centers/command_colony.png",
+   "layout": "interiors/rooms/command_centers/command_colony.json",
+   "size_tiles": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "command_throne",
+   "category": "command_centers",
+   "name": "Throne Room",
+   "file": "interiors/rooms/command_centers/command_throne.png",
+   "layout": "interiors/rooms/command_centers/command_throne.json",
+   "size_tiles": [
+    11,
+    9
+   ]
+  }
+ ]
+}

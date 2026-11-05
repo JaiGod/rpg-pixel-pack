@@ -20,7 +20,8 @@ var _flash_t: float = 0.0
 
 func _ready() -> void:
 	direction = start_direction
-	position.y = -14 if position == Vector2.ZERO else position.y
+	if position == Vector2.ZERO:
+		position.y = -14.0
 	animation_finished.connect(func(): action_finished.emit(current_anim))
 	if sprite_frames != null:
 		play_anim("idle", true)

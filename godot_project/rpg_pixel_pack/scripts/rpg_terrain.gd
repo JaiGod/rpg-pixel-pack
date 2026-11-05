@@ -29,7 +29,7 @@ static func paint(layer: TileMapLayer, corners: Array, rng: RandomNumberGenerato
 			elif idx == 15:
 				atlas = Vector2i(rng.randi_range(0, 3), 3)
 			else:
-				atlas = Vector2i(idx % 8, 1 + idx / 8)
+				atlas = Vector2i(idx % 8, 1 + int(idx / 8.0))
 			layer.set_cell(Vector2i(x, y), 0, atlas)
 
 

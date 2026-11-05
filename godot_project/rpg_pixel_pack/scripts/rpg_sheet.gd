@@ -1,3 +1,4 @@
+@tool
 class_name RPGSheet
 extends RefCounted
 ## Sprite-sheet layouts, SpriteFrames builders and catalog access for the RPG Pixel Pack.

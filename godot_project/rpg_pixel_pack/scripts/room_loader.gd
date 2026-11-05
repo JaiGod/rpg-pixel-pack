@@ -34,7 +34,8 @@ func load_room(id: String) -> void:
 	room_id = id
 	floor_layer.clear()
 	for c in props.get_children():
-		c.queue_free()
+		if c is StaticBody2D:
+			c.queue_free()
 	var entry: Dictionary = {}
 	for r in list_rooms():
 		if r["id"] == id:

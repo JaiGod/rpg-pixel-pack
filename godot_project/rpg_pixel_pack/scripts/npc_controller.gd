@@ -5,7 +5,7 @@ extends CharacterBody2D
 signal talked(npc_name: String, line: String)
 
 @export var npc_name: String = "Villager"
-@export_multiline var lines: PackedStringArray = PackedStringArray(["Lovely day, isn't it?"])
+@export var lines: PackedStringArray = PackedStringArray(["Lovely day, isn't it?"])
 @export var wander_radius: float = 48.0
 @export var speed: float = 28.0
 @export var idle_time_range: Vector2 = Vector2(1.0, 3.5)

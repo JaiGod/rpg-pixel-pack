@@ -43,9 +43,15 @@ vec3 swap(vec3 c) {
 	return c;
 }
 
+varying vec4 v_mod;
+
+void vertex() {
+	v_mod = COLOR;
+}
+
 void fragment() {
 	vec4 tex = texture(TEXTURE, UV);
 	vec3 rgb = swap_enabled ? swap(tex.rgb) : tex.rgb;
 	rgb = mix(rgb, flash_color.rgb, flash);
-	COLOR = vec4(rgb, tex.a);
+	COLOR = vec4(rgb, tex.a) * v_mod;
 }

@@ -48,7 +48,7 @@ func _ready() -> void:
 	add_child(t2)
 	x = 40.0
 	for a in anims["items"]:
-		var sp := DemoWorld.add_animation(self, a["id"], Vector2(x, y + 40))
+		DemoWorld.add_animation(self, a["id"], Vector2(x, y + 40))
 		var lab := DemoWorld.make_label(a["name"], 6, Color(0.8, 0.8, 0.92))
 		lab.position = Vector2(x - 20, y + 42)
 		add_child(lab)

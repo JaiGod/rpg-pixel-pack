@@ -3,7 +3,12 @@
 (() => {
 'use strict';
 const P = window.PACK;
-const REPO = 'JaiGod/rpg-pixel-pack';
+// On GitHub Pages (<owner>.github.io/<repo>/) derive the repo from the URL so links survive renames.
+const REPO = (() => {
+  const h = location.hostname, seg = location.pathname.split('/').filter(Boolean)[0];
+  if (h.endsWith('.github.io') && seg) return h.split('.')[0] + '/' + seg;
+  return 'JaiGod/rpg-pixel-pack';
+})();
 const BASE = 'pack/';
 const KEYS = {
   primary: [[60, 60, 60], [110, 110, 110], [165, 165, 165], [220, 220, 220]],

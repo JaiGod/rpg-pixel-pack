@@ -7,7 +7,7 @@
 **An open-source 32×32 pixel-art RPG content pack for Godot 4: layered characters, monsters, biomes, buildings, interiors and furniture, plus working Godot systems to use them.**
 
 [![Play in browser](https://img.shields.io/badge/▶_Play-in_browser-f7e08a?style=for-the-badge)](https://jaigod.github.io/rpg-pixel-pack/)
-[![Download v1.0](https://img.shields.io/badge/Download-v1.0-6fd0e6?style=for-the-badge)](https://github.com/JaiGod/rpg-pixel-pack/releases/tag/v1.0)
+[![Download v1.0](https://img.shields.io/badge/Download-v1.0-6fd0e6?style=for-the-badge)](../../releases/tag/v1.0)
 [![Godot 4.3+](https://img.shields.io/badge/Godot-4.3%2B-478cbf?style=for-the-badge&logo=godotengine&logoColor=white)](https://godotengine.org/)
 [![Art: CC0](https://img.shields.io/badge/Art-CC0_1.0-58a646?style=for-the-badge)](LICENSE)
 [![Code: MIT](https://img.shields.io/badge/Code-MIT-9a6ed0?style=for-the-badge)](LICENSE)
@@ -84,7 +84,7 @@ Everything is regenerated from source by [`tools/generate_all.py`](tools/generat
 
 ### Option A: run the demo project
 1. Install **[Godot 4.3 or newer](https://godotengine.org/download)** (standard build; no C#/.NET needed).
-2. Clone or [download](https://github.com/JaiGod/rpg-pixel-pack/archive/refs/heads/main.zip) this repo.
+2. Clone or [download](../../archive/refs/heads/main.zip) this repo.
 3. In the Godot Project Manager click **Import** and select `godot_project/project.godot`.
 4. Press **F5**. The demo menu opens: *Village*, *Character Creator*, *Inventory & Equipment*, *Interiors*, *Asset Gallery*. **Esc** returns to the menu.
 

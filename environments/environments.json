@@ -1,0 +1,437 @@
+{
+ "tile_size": [
+  32,
+  32
+ ],
+ "atlas_columns": 8,
+ "atlas_rows": 4,
+ "layout": {
+  "row0": "cols 0-3 base ground variants, cols 4-7 decorated base ground",
+  "rows1-2": "16 corner-matched transition tiles; index = TL*8 + TR*4 + BL*2 + BR (1 = secondary)",
+  "row3": "cols 0-3 secondary terrain variants, cols 4-7 obstacle tiles (with collision)"
+ },
+ "biomes": [
+  {
+   "id": "village",
+   "name": "Medieval Village",
+   "file": "environments/tilesets/village.png",
+   "base_terrain": "Grass",
+   "secondary_terrain": "Cobblestone",
+   "decorations": [
+    "flowers",
+    "tallgrass",
+    "flowers",
+    "pebbles"
+   ],
+   "obstacles": [
+    "bush",
+    "fence",
+    "rock",
+    "barrel"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/village.tres"
+  },
+  {
+   "id": "forest",
+   "name": "Forest",
+   "file": "environments/tilesets/forest.png",
+   "base_terrain": "Forest Floor",
+   "secondary_terrain": "Dirt Path",
+   "decorations": [
+    "leaves",
+    "mushrooms",
+    "tallgrass",
+    "leaves"
+   ],
+   "obstacles": [
+    "stump",
+    "log",
+    "bush",
+    "rock"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/forest.tres"
+  },
+  {
+   "id": "desert",
+   "name": "Desert",
+   "file": "environments/tilesets/desert.png",
+   "base_terrain": "Sand",
+   "secondary_terrain": "Hardpan",
+   "decorations": [
+    "pebbles",
+    "bones",
+    "pebbles",
+    "cracks"
+   ],
+   "obstacles": [
+    "cactus",
+    "boulder_sand",
+    "bones_pile",
+    "boulder_sand"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/desert.tres"
+  },
+  {
+   "id": "swamp",
+   "name": "Swamp",
+   "file": "environments/tilesets/swamp.png",
+   "base_terrain": "Bog",
+   "secondary_terrain": "Murky Water",
+   "decorations": [
+    "mushrooms",
+    "moss",
+    "tallgrass",
+    "moss"
+   ],
+   "obstacles": [
+    "reeds",
+    "log",
+    "stump",
+    "reeds"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/swamp.tres"
+  },
+  {
+   "id": "snow",
+   "name": "Snow Biome",
+   "file": "environments/tilesets/snow.png",
+   "base_terrain": "Snow",
+   "secondary_terrain": "Frozen Lake",
+   "decorations": [
+    "snowdrift",
+    "pebbles",
+    "snowdrift",
+    "snowdrift"
+   ],
+   "obstacles": [
+    "snow_rock",
+    "ice_block",
+    "snow_rock",
+    "ice_block"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/snow.tres"
+  },
+  {
+   "id": "dungeon",
+   "name": "Dungeon",
+   "file": "environments/tilesets/dungeon.png",
+   "base_terrain": "Dungeon Floor",
+   "secondary_terrain": "Abyss",
+   "decorations": [
+    "cracks",
+    "bones",
+    "moss",
+    "rubble"
+   ],
+   "obstacles": [
+    "wall_stone",
+    "bones_pile",
+    "pit",
+    "barrel"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/dungeon.tres"
+  },
+  {
+   "id": "castle",
+   "name": "Castle",
+   "file": "environments/tilesets/castle.png",
+   "base_terrain": "Flagstone",
+   "secondary_terrain": "Royal Carpet",
+   "decorations": [
+    "cracks",
+    "pebbles",
+    "cracks",
+    "moss"
+   ],
+   "obstacles": [
+    "wall_castle",
+    "barrel",
+    "rock",
+    "wall_castle"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/castle.tres"
+  },
+  {
+   "id": "ruins",
+   "name": "Ancient Ruins",
+   "file": "environments/tilesets/ruins.png",
+   "base_terrain": "Wild Grass",
+   "secondary_terrain": "Ruined Tiles",
+   "decorations": [
+    "rubble",
+    "moss",
+    "tallgrass",
+    "rubble"
+   ],
+   "obstacles": [
+    "pillar_broken",
+    "rock",
+    "bush",
+    "pillar_broken"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/ruins.tres"
+  },
+  {
+   "id": "space_colony",
+   "name": "Space Colony",
+   "file": "environments/tilesets/space_colony.png",
+   "base_terrain": "Regolith",
+   "secondary_terrain": "Hab Plating",
+   "decorations": [
+    "craters",
+    "pebbles",
+    "craters",
+    "bolts"
+   ],
+   "obstacles": [
+    "moon_rock",
+    "solar",
+    "crate_tech",
+    "moon_rock"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/space_colony.tres"
+  },
+  {
+   "id": "research_lab",
+   "name": "Research Lab",
+   "file": "environments/tilesets/research_lab.png",
+   "base_terrain": "Lab Tile",
+   "secondary_terrain": "Hazard Zone",
+   "decorations": [
+    "vent",
+    "bolts",
+    "cracks",
+    "vent"
+   ],
+   "obstacles": [
+    "barrier",
+    "pipe",
+    "crate_tech",
+    "barrier"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/research_lab.tres"
+  },
+  {
+   "id": "cyber_city",
+   "name": "Cyber City",
+   "file": "environments/tilesets/cyber_city.png",
+   "base_terrain": "Asphalt",
+   "secondary_terrain": "Neon Sidewalk",
+   "decorations": [
+    "puddle",
+    "manhole",
+    "lines",
+    "cracks"
+   ],
+   "obstacles": [
+    "hydrant",
+    "bollard",
+    "barrier",
+    "barrel"
+   ],
+   "godot_tileset": "res://rpg_pixel_pack/resources/tilesets/cyber_city.tres"
+  }
+ ],
+ "props": [
+  {
+   "id": "tree_oak",
+   "biome": "village",
+   "name": "Oak Tree",
+   "size": [
+    64,
+    64
+   ],
+   "file": "environments/props/tree_oak.png"
+  },
+  {
+   "id": "tree_cherry",
+   "biome": "village",
+   "name": "Cherry Blossom",
+   "size": [
+    64,
+    64
+   ],
+   "file": "environments/props/tree_cherry.png"
+  },
+  {
+   "id": "well",
+   "biome": "village",
+   "name": "Village Well",
+   "size": [
+    32,
+    32
+   ],
+   "file": "environments/props/well.png"
+  },
+  {
+   "id": "lamp_post",
+   "biome": "village",
+   "name": "Street Lamp",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/lamp_post.png"
+  },
+  {
+   "id": "tree_big",
+   "biome": "forest",
+   "name": "Ancient Tree",
+   "size": [
+    64,
+    64
+   ],
+   "file": "environments/props/tree_big.png"
+  },
+  {
+   "id": "tree_autumn",
+   "biome": "forest",
+   "name": "Autumn Tree",
+   "size": [
+    64,
+    64
+   ],
+   "file": "environments/props/tree_autumn.png"
+  },
+  {
+   "id": "tree_pine",
+   "biome": "forest",
+   "name": "Pine Tree",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/tree_pine.png"
+  },
+  {
+   "id": "mushroom_giant",
+   "biome": "forest",
+   "name": "Giant Mushroom",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/mushroom_giant.png"
+  },
+  {
+   "id": "tree_palm",
+   "biome": "desert",
+   "name": "Palm Tree",
+   "size": [
+    64,
+    64
+   ],
+   "file": "environments/props/tree_palm.png"
+  },
+  {
+   "id": "tree_dead",
+   "biome": "swamp",
+   "name": "Dead Tree",
+   "size": [
+    64,
+    64
+   ],
+   "file": "environments/props/tree_dead.png"
+  },
+  {
+   "id": "tree_willow",
+   "biome": "swamp",
+   "name": "Swamp Willow",
+   "size": [
+    64,
+    64
+   ],
+   "file": "environments/props/tree_willow.png"
+  },
+  {
+   "id": "tree_snowpine",
+   "biome": "snow",
+   "name": "Snowy Pine",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/tree_snowpine.png"
+  },
+  {
+   "id": "crystal_cluster",
+   "biome": "dungeon",
+   "name": "Crystal Cluster",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/crystal_cluster.png"
+  },
+  {
+   "id": "statue_ruin",
+   "biome": "ruins",
+   "name": "Weathered Statue",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/statue_ruin.png"
+  },
+  {
+   "id": "pillar_ruin",
+   "biome": "ruins",
+   "name": "Ancient Pillar",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/pillar_ruin.png"
+  },
+  {
+   "id": "antenna",
+   "biome": "space_colony",
+   "name": "Comms Antenna",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/antenna.png"
+  },
+  {
+   "id": "specimen_tank",
+   "biome": "research_lab",
+   "name": "Specimen Tank",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/specimen_tank.png"
+  },
+  {
+   "id": "cyber_tree",
+   "biome": "cyber_city",
+   "name": "Holo Tree",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/cyber_tree.png"
+  },
+  {
+   "id": "vending_machine",
+   "biome": "cyber_city",
+   "name": "Vending Machine",
+   "size": [
+    32,
+    64
+   ],
+   "file": "environments/props/vending_machine.png"
+  },
+  {
+   "id": "fountain",
+   "biome": "castle",
+   "name": "Courtyard Fountain",
+   "size": [
+    64,
+    64
+   ],
+   "file": "environments/props/fountain.png"
+  }
+ ]
+}

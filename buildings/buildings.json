@@ -1,0 +1,964 @@
+{
+ "items": [
+  {
+   "id": "house_small_cottage",
+   "category": "small_houses",
+   "name": "Cottage",
+   "file": "buildings/small_houses/house_small_cottage.png",
+   "size": [
+    96,
+    96
+   ],
+   "size_tiles": [
+    3,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    88,
+    42
+   ],
+   "door_tile": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "house_small_thatch",
+   "category": "small_houses",
+   "name": "Thatched Hut",
+   "file": "buildings/small_houses/house_small_thatch.png",
+   "size": [
+    96,
+    96
+   ],
+   "size_tiles": [
+    3,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    88,
+    42
+   ],
+   "door_tile": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "house_small_stone",
+   "category": "small_houses",
+   "name": "Stone Cottage",
+   "file": "buildings/small_houses/house_small_stone.png",
+   "size": [
+    96,
+    96
+   ],
+   "size_tiles": [
+    3,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    88,
+    42
+   ],
+   "door_tile": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "house_small_log",
+   "category": "small_houses",
+   "name": "Log Cabin",
+   "file": "buildings/small_houses/house_small_log.png",
+   "size": [
+    96,
+    96
+   ],
+   "size_tiles": [
+    3,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    88,
+    42
+   ],
+   "door_tile": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "house_large_manor",
+   "category": "large_houses",
+   "name": "Manor",
+   "file": "buildings/large_houses/house_large_manor.png",
+   "size": [
+    128,
+    128
+   ],
+   "size_tiles": [
+    4,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    120,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "house_large_townhouse",
+   "category": "large_houses",
+   "name": "Townhouse",
+   "file": "buildings/large_houses/house_large_townhouse.png",
+   "size": [
+    128,
+    128
+   ],
+   "size_tiles": [
+    4,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    120,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "house_large_villa",
+   "category": "large_houses",
+   "name": "Villa",
+   "file": "buildings/large_houses/house_large_villa.png",
+   "size": [
+    128,
+    128
+   ],
+   "size_tiles": [
+    4,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    120,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "house_large_lodge",
+   "category": "large_houses",
+   "name": "Hunting Lodge",
+   "file": "buildings/large_houses/house_large_lodge.png",
+   "size": [
+    128,
+    128
+   ],
+   "size_tiles": [
+    4,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    120,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "inn_tavern",
+   "category": "inns",
+   "name": "The Prancing Boar",
+   "file": "buildings/inns/inn_tavern.png",
+   "size": [
+    160,
+    128
+   ],
+   "size_tiles": [
+    5,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    152,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "inn_lodge",
+   "category": "inns",
+   "name": "Traveler's Rest",
+   "file": "buildings/inns/inn_lodge.png",
+   "size": [
+    160,
+    128
+   ],
+   "size_tiles": [
+    5,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    152,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "inn_mountain",
+   "category": "inns",
+   "name": "Frostpeak Inn",
+   "file": "buildings/inns/inn_mountain.png",
+   "size": [
+    160,
+    128
+   ],
+   "size_tiles": [
+    5,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    152,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "inn_harbor",
+   "category": "inns",
+   "name": "Harbor Inn",
+   "file": "buildings/inns/inn_harbor.png",
+   "size": [
+    160,
+    128
+   ],
+   "size_tiles": [
+    5,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    152,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "shop_general",
+   "category": "shops",
+   "name": "General Store",
+   "file": "buildings/shops/shop_general.png",
+   "size": [
+    96,
+    96
+   ],
+   "size_tiles": [
+    3,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    88,
+    42
+   ],
+   "door_tile": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "shop_potion",
+   "category": "shops",
+   "name": "Potion Shop",
+   "file": "buildings/shops/shop_potion.png",
+   "size": [
+    96,
+    96
+   ],
+   "size_tiles": [
+    3,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    88,
+    42
+   ],
+   "door_tile": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "shop_armory",
+   "category": "shops",
+   "name": "Armory",
+   "file": "buildings/shops/shop_armory.png",
+   "size": [
+    96,
+    96
+   ],
+   "size_tiles": [
+    3,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    88,
+    42
+   ],
+   "door_tile": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "shop_bakery",
+   "category": "shops",
+   "name": "Bakery",
+   "file": "buildings/shops/shop_bakery.png",
+   "size": [
+    96,
+    96
+   ],
+   "size_tiles": [
+    3,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    88,
+    42
+   ],
+   "door_tile": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "farm_red_barn",
+   "category": "farms",
+   "name": "Red Barn & Silo",
+   "file": "buildings/farms/farm_red_barn.png",
+   "size": [
+    128,
+    128
+   ],
+   "size_tiles": [
+    4,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    120,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "farm_barn",
+   "category": "farms",
+   "name": "Barn",
+   "file": "buildings/farms/farm_barn.png",
+   "size": [
+    128,
+    128
+   ],
+   "size_tiles": [
+    4,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    120,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "farm_stable",
+   "category": "farms",
+   "name": "Stable",
+   "file": "buildings/farms/farm_stable.png",
+   "size": [
+    128,
+    128
+   ],
+   "size_tiles": [
+    4,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    120,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "farm_granary",
+   "category": "farms",
+   "name": "Granary",
+   "file": "buildings/farms/farm_granary.png",
+   "size": [
+    128,
+    128
+   ],
+   "size_tiles": [
+    4,
+    4
+   ],
+   "collision_rect": [
+    4,
+    64,
+    120,
+    58
+   ],
+   "door_tile": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "blacksmith_forge",
+   "category": "blacksmiths",
+   "name": "Village Forge",
+   "file": "buildings/blacksmiths/blacksmith_forge.png",
+   "size": [
+    128,
+    96
+   ],
+   "size_tiles": [
+    4,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    120,
+    42
+   ],
+   "door_tile": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "blacksmith_timber",
+   "category": "blacksmiths",
+   "name": "Smithy",
+   "file": "buildings/blacksmiths/blacksmith_timber.png",
+   "size": [
+    128,
+    96
+   ],
+   "size_tiles": [
+    4,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    120,
+    42
+   ],
+   "door_tile": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "blacksmith_dwarven",
+   "category": "blacksmiths",
+   "name": "Dwarven Forge",
+   "file": "buildings/blacksmiths/blacksmith_dwarven.png",
+   "size": [
+    128,
+    96
+   ],
+   "size_tiles": [
+    4,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    120,
+    42
+   ],
+   "door_tile": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "blacksmith_frontier",
+   "category": "blacksmiths",
+   "name": "Frontier Smith",
+   "file": "buildings/blacksmiths/blacksmith_frontier.png",
+   "size": [
+    128,
+    96
+   ],
+   "size_tiles": [
+    4,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    120,
+    42
+   ],
+   "door_tile": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "tower_arcane",
+   "category": "wizard_towers",
+   "name": "Arcane Tower",
+   "file": "buildings/wizard_towers/tower_arcane.png",
+   "size": [
+    64,
+    160
+   ],
+   "size_tiles": [
+    2,
+    5
+   ],
+   "collision_rect": [
+    4,
+    80,
+    56,
+    74
+   ],
+   "door_tile": [
+    1,
+    4
+   ]
+  },
+  {
+   "id": "tower_frost",
+   "category": "wizard_towers",
+   "name": "Frost Spire",
+   "file": "buildings/wizard_towers/tower_frost.png",
+   "size": [
+    64,
+    160
+   ],
+   "size_tiles": [
+    2,
+    5
+   ],
+   "collision_rect": [
+    4,
+    80,
+    56,
+    74
+   ],
+   "door_tile": [
+    1,
+    4
+   ]
+  },
+  {
+   "id": "tower_dark",
+   "category": "wizard_towers",
+   "name": "Dark Tower",
+   "file": "buildings/wizard_towers/tower_dark.png",
+   "size": [
+    64,
+    160
+   ],
+   "size_tiles": [
+    2,
+    5
+   ],
+   "collision_rect": [
+    4,
+    80,
+    56,
+    74
+   ],
+   "door_tile": [
+    1,
+    4
+   ]
+  },
+  {
+   "id": "tower_druid",
+   "category": "wizard_towers",
+   "name": "Druid Tower",
+   "file": "buildings/wizard_towers/tower_druid.png",
+   "size": [
+    64,
+    160
+   ],
+   "size_tiles": [
+    2,
+    5
+   ],
+   "collision_rect": [
+    4,
+    80,
+    56,
+    74
+   ],
+   "door_tile": [
+    1,
+    4
+   ]
+  },
+  {
+   "id": "castle_royal",
+   "category": "castles",
+   "name": "Royal Castle",
+   "file": "buildings/castles/castle_royal.png",
+   "size": [
+    192,
+    192
+   ],
+   "size_tiles": [
+    6,
+    6
+   ],
+   "collision_rect": [
+    4,
+    96,
+    184,
+    90
+   ],
+   "door_tile": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "castle_dark",
+   "category": "castles",
+   "name": "Dark Citadel",
+   "file": "buildings/castles/castle_dark.png",
+   "size": [
+    192,
+    192
+   ],
+   "size_tiles": [
+    6,
+    6
+   ],
+   "collision_rect": [
+    4,
+    96,
+    184,
+    90
+   ],
+   "door_tile": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "castle_desert",
+   "category": "castles",
+   "name": "Desert Palace",
+   "file": "buildings/castles/castle_desert.png",
+   "size": [
+    192,
+    192
+   ],
+   "size_tiles": [
+    6,
+    6
+   ],
+   "collision_rect": [
+    4,
+    96,
+    184,
+    90
+   ],
+   "door_tile": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "castle_frost",
+   "category": "castles",
+   "name": "Frost Keep",
+   "file": "buildings/castles/castle_frost.png",
+   "size": [
+    192,
+    192
+   ],
+   "size_tiles": [
+    6,
+    6
+   ],
+   "collision_rect": [
+    4,
+    96,
+    184,
+    90
+   ],
+   "door_tile": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "habitat_dome",
+   "category": "space_habitats",
+   "name": "Hab Dome",
+   "file": "buildings/space_habitats/habitat_dome.png",
+   "size": [
+    128,
+    96
+   ],
+   "size_tiles": [
+    4,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    120,
+    42
+   ],
+   "door_tile": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "habitat_greenhouse",
+   "category": "space_habitats",
+   "name": "Greenhouse Dome",
+   "file": "buildings/space_habitats/habitat_greenhouse.png",
+   "size": [
+    128,
+    96
+   ],
+   "size_tiles": [
+    4,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    120,
+    42
+   ],
+   "door_tile": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "habitat_mining",
+   "category": "space_habitats",
+   "name": "Mining Outpost",
+   "file": "buildings/space_habitats/habitat_mining.png",
+   "size": [
+    128,
+    96
+   ],
+   "size_tiles": [
+    4,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    120,
+    42
+   ],
+   "door_tile": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "habitat_research",
+   "category": "space_habitats",
+   "name": "Research Module",
+   "file": "buildings/space_habitats/habitat_research.png",
+   "size": [
+    128,
+    96
+   ],
+   "size_tiles": [
+    4,
+    3
+   ],
+   "collision_rect": [
+    4,
+    48,
+    120,
+    42
+   ],
+   "door_tile": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "apartment_neon",
+   "category": "futuristic_apartments",
+   "name": "Neon Tower",
+   "file": "buildings/futuristic_apartments/apartment_neon.png",
+   "size": [
+    96,
+    192
+   ],
+   "size_tiles": [
+    3,
+    6
+   ],
+   "collision_rect": [
+    4,
+    96,
+    88,
+    90
+   ],
+   "door_tile": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "apartment_corp",
+   "category": "futuristic_apartments",
+   "name": "Corporate Block",
+   "file": "buildings/futuristic_apartments/apartment_corp.png",
+   "size": [
+    96,
+    192
+   ],
+   "size_tiles": [
+    3,
+    6
+   ],
+   "collision_rect": [
+    4,
+    96,
+    88,
+    90
+   ],
+   "door_tile": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "apartment_slum",
+   "category": "futuristic_apartments",
+   "name": "Stack Housing",
+   "file": "buildings/futuristic_apartments/apartment_slum.png",
+   "size": [
+    96,
+    192
+   ],
+   "size_tiles": [
+    3,
+    6
+   ],
+   "collision_rect": [
+    4,
+    96,
+    88,
+    90
+   ],
+   "door_tile": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "apartment_luxury",
+   "category": "futuristic_apartments",
+   "name": "Skyline Residences",
+   "file": "buildings/futuristic_apartments/apartment_luxury.png",
+   "size": [
+    96,
+    192
+   ],
+   "size_tiles": [
+    3,
+    6
+   ],
+   "collision_rect": [
+    4,
+    96,
+    88,
+    90
+   ],
+   "door_tile": [
+    1,
+    5
+   ]
+  }
+ ]
+}

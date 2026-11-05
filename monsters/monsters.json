@@ -1,0 +1,1089 @@
+{
+ "layouts": {
+  "character": {
+   "columns": 6,
+   "rows": 18,
+   "directions": [
+    "down",
+    "up",
+    "side"
+   ],
+   "animations": [
+    {
+     "name": "idle_down",
+     "row": 0,
+     "frames": 4,
+     "fps": 6,
+     "loop": true
+    },
+    {
+     "name": "idle_up",
+     "row": 1,
+     "frames": 4,
+     "fps": 6,
+     "loop": true
+    },
+    {
+     "name": "idle_side",
+     "row": 2,
+     "frames": 4,
+     "fps": 6,
+     "loop": true
+    },
+    {
+     "name": "walk_down",
+     "row": 3,
+     "frames": 6,
+     "fps": 10,
+     "loop": true
+    },
+    {
+     "name": "walk_up",
+     "row": 4,
+     "frames": 6,
+     "fps": 10,
+     "loop": true
+    },
+    {
+     "name": "walk_side",
+     "row": 5,
+     "frames": 6,
+     "fps": 10,
+     "loop": true
+    },
+    {
+     "name": "run_down",
+     "row": 6,
+     "frames": 6,
+     "fps": 14,
+     "loop": true
+    },
+    {
+     "name": "run_up",
+     "row": 7,
+     "frames": 6,
+     "fps": 14,
+     "loop": true
+    },
+    {
+     "name": "run_side",
+     "row": 8,
+     "frames": 6,
+     "fps": 14,
+     "loop": true
+    },
+    {
+     "name": "attack_down",
+     "row": 9,
+     "frames": 4,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "attack_up",
+     "row": 10,
+     "frames": 4,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "attack_side",
+     "row": 11,
+     "frames": 4,
+     "fps": 12,
+     "loop": false
+    },
+    {
+     "name": "hurt_down",
+     "row": 12,
+     "frames": 2,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "hurt_up",
+     "row": 13,
+     "frames": 2,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "hurt_side",
+     "row": 14,
+     "frames": 2,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "death_down",
+     "row": 15,
+     "frames": 5,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "death_up",
+     "row": 16,
+     "frames": 5,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "death_side",
+     "row": 17,
+     "frames": 5,
+     "fps": 8,
+     "loop": false
+    }
+   ],
+   "note": "Same layout as player characters; side faces right"
+  },
+  "creature": {
+   "columns": 5,
+   "rows": 5,
+   "directions": [
+    "side"
+   ],
+   "animations": [
+    {
+     "name": "idle",
+     "row": 0,
+     "frames": 4,
+     "fps": 6,
+     "loop": true
+    },
+    {
+     "name": "move",
+     "row": 1,
+     "frames": 4,
+     "fps": 8,
+     "loop": true
+    },
+    {
+     "name": "attack",
+     "row": 2,
+     "frames": 4,
+     "fps": 10,
+     "loop": false
+    },
+    {
+     "name": "hurt",
+     "row": 3,
+     "frames": 2,
+     "fps": 8,
+     "loop": false
+    },
+    {
+     "name": "death",
+     "row": 4,
+     "frames": 5,
+     "fps": 8,
+     "loop": false
+    }
+   ],
+   "note": "Single facing (right). Flip horizontally for left."
+  }
+ },
+ "monsters": [
+  {
+   "id": "slime_arcane",
+   "family": "Slimes",
+   "name": "Arcane Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_arcane.png"
+  },
+  {
+   "id": "slime_blue",
+   "family": "Slimes",
+   "name": "Blue Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_blue.png"
+  },
+  {
+   "id": "slime_crystal",
+   "family": "Slimes",
+   "name": "Crystal Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_crystal.png"
+  },
+  {
+   "id": "slime_demon",
+   "family": "Slimes",
+   "name": "Demon Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_demon.png"
+  },
+  {
+   "id": "slime_fire",
+   "family": "Slimes",
+   "name": "Magma Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_fire.png"
+  },
+  {
+   "id": "slime_forest",
+   "family": "Slimes",
+   "name": "Sprout Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_forest.png"
+  },
+  {
+   "id": "slime_gold",
+   "family": "Slimes",
+   "name": "Gold Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_gold.png"
+  },
+  {
+   "id": "slime_green",
+   "family": "Slimes",
+   "name": "Green Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_green.png"
+  },
+  {
+   "id": "slime_ice",
+   "family": "Slimes",
+   "name": "Frost Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_ice.png"
+  },
+  {
+   "id": "slime_metal",
+   "family": "Slimes",
+   "name": "Metal Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_metal.png"
+  },
+  {
+   "id": "slime_poison",
+   "family": "Slimes",
+   "name": "Toxic Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_poison.png"
+  },
+  {
+   "id": "slime_shadow",
+   "family": "Slimes",
+   "name": "Shadow Slime",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/slimes/slime_shadow.png"
+  },
+  {
+   "id": "skeleton_archer",
+   "family": "Skeletons",
+   "name": "Skeleton Archer",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/skeletons/skeleton_archer.png",
+   "weapon": "bow",
+   "offhand": null
+  },
+  {
+   "id": "skeleton_knight",
+   "family": "Skeletons",
+   "name": "Skeleton Knight",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/skeletons/skeleton_knight.png",
+   "weapon": "greatsword",
+   "offhand": "kite_shield"
+  },
+  {
+   "id": "skeleton_lancer",
+   "family": "Skeletons",
+   "name": "Skeleton Lancer",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/skeletons/skeleton_lancer.png",
+   "weapon": "spear",
+   "offhand": "buckler"
+  },
+  {
+   "id": "skeleton_mage",
+   "family": "Skeletons",
+   "name": "Skeleton Mage",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/skeletons/skeleton_mage.png",
+   "weapon": "staff",
+   "offhand": null
+  },
+  {
+   "id": "skeleton_miner",
+   "family": "Skeletons",
+   "name": "Skeleton Miner",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/skeletons/skeleton_miner.png",
+   "weapon": "pickaxe",
+   "offhand": "lantern"
+  },
+  {
+   "id": "skeleton_necro",
+   "family": "Skeletons",
+   "name": "Bone Priest",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/skeletons/skeleton_necro.png",
+   "weapon": "necro_staff",
+   "offhand": null
+  },
+  {
+   "id": "skeleton_pirate",
+   "family": "Skeletons",
+   "name": "Skeleton Pirate",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/skeletons/skeleton_pirate.png",
+   "weapon": "cutlass",
+   "offhand": null
+  },
+  {
+   "id": "skeleton_warrior",
+   "family": "Skeletons",
+   "name": "Skeleton Warrior",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/skeletons/skeleton_warrior.png",
+   "weapon": "sword",
+   "offhand": "round_shield"
+  },
+  {
+   "id": "goblin_archer",
+   "family": "Goblins",
+   "name": "Goblin Archer",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/goblins/goblin_archer.png",
+   "weapon": "bow",
+   "offhand": null
+  },
+  {
+   "id": "goblin_bomber",
+   "family": "Goblins",
+   "name": "Goblin Tinker",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/goblins/goblin_bomber.png",
+   "weapon": "wrench",
+   "offhand": null
+  },
+  {
+   "id": "goblin_chief",
+   "family": "Goblins",
+   "name": "Goblin Chief",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/goblins/goblin_chief.png",
+   "weapon": "axe",
+   "offhand": null
+  },
+  {
+   "id": "goblin_grunt",
+   "family": "Goblins",
+   "name": "Goblin Grunt",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/goblins/goblin_grunt.png",
+   "weapon": "dagger",
+   "offhand": null
+  },
+  {
+   "id": "goblin_pirate",
+   "family": "Goblins",
+   "name": "Goblin Buccaneer",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/goblins/goblin_pirate.png",
+   "weapon": "cutlass",
+   "offhand": null
+  },
+  {
+   "id": "goblin_rider",
+   "family": "Goblins",
+   "name": "Goblin Raider",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/goblins/goblin_rider.png",
+   "weapon": "spear",
+   "offhand": "buckler"
+  },
+  {
+   "id": "goblin_shaman",
+   "family": "Goblins",
+   "name": "Goblin Shaman",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/goblins/goblin_shaman.png",
+   "weapon": "staff",
+   "offhand": null
+  },
+  {
+   "id": "goblin_thief",
+   "family": "Goblins",
+   "name": "Goblin Thief",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/goblins/goblin_thief.png",
+   "weapon": "dagger",
+   "offhand": null
+  },
+  {
+   "id": "orc_berserker",
+   "family": "Orcs",
+   "name": "Orc Berserker",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/orcs/orc_berserker.png",
+   "weapon": "greatsword",
+   "offhand": null
+  },
+  {
+   "id": "orc_brute",
+   "family": "Orcs",
+   "name": "Orc Brute",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/orcs/orc_brute.png",
+   "weapon": "axe",
+   "offhand": null
+  },
+  {
+   "id": "orc_hunter",
+   "family": "Orcs",
+   "name": "Orc Hunter",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/orcs/orc_hunter.png",
+   "weapon": "crossbow",
+   "offhand": null
+  },
+  {
+   "id": "orc_pikeman",
+   "family": "Orcs",
+   "name": "Orc Pikeman",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/orcs/orc_pikeman.png",
+   "weapon": "spear",
+   "offhand": "kite_shield"
+  },
+  {
+   "id": "orc_shaman",
+   "family": "Orcs",
+   "name": "Orc Shaman",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/orcs/orc_shaman.png",
+   "weapon": "necro_staff",
+   "offhand": null
+  },
+  {
+   "id": "orc_smith",
+   "family": "Orcs",
+   "name": "Orc Smith",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/orcs/orc_smith.png",
+   "weapon": "hammer",
+   "offhand": null
+  },
+  {
+   "id": "orc_warlord",
+   "family": "Orcs",
+   "name": "Orc Warlord",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/orcs/orc_warlord.png",
+   "weapon": "hammer",
+   "offhand": null
+  },
+  {
+   "id": "orc_warrior",
+   "family": "Orcs",
+   "name": "Orc Warrior",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/orcs/orc_warrior.png",
+   "weapon": "axe",
+   "offhand": "round_shield"
+  },
+  {
+   "id": "dragon_amethyst",
+   "family": "Dragons",
+   "name": "Amethyst Whelp",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/dragons/dragon_amethyst.png"
+  },
+  {
+   "id": "dragon_blue",
+   "family": "Dragons",
+   "name": "Storm Whelp",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/dragons/dragon_blue.png"
+  },
+  {
+   "id": "dragon_bone",
+   "family": "Dragons",
+   "name": "Bone Whelp",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/dragons/dragon_bone.png"
+  },
+  {
+   "id": "dragon_frost",
+   "family": "Dragons",
+   "name": "Frost Whelp",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/dragons/dragon_frost.png"
+  },
+  {
+   "id": "dragon_gold",
+   "family": "Dragons",
+   "name": "Gold Whelp",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/dragons/dragon_gold.png"
+  },
+  {
+   "id": "dragon_green",
+   "family": "Dragons",
+   "name": "Forest Whelp",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/dragons/dragon_green.png"
+  },
+  {
+   "id": "dragon_red",
+   "family": "Dragons",
+   "name": "Red Whelp",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/dragons/dragon_red.png"
+  },
+  {
+   "id": "dragon_shadow",
+   "family": "Dragons",
+   "name": "Shadow Whelp",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/dragons/dragon_shadow.png"
+  },
+  {
+   "id": "robot_android",
+   "family": "Robots",
+   "name": "Android",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/robots/robot_android.png",
+   "weapon": "katana",
+   "offhand": null
+  },
+  {
+   "id": "robot_assault",
+   "family": "Robots",
+   "name": "Assault Mech-Trooper",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/robots/robot_assault.png",
+   "weapon": "blaster",
+   "offhand": null
+  },
+  {
+   "id": "robot_drone",
+   "family": "Robots",
+   "name": "Recon Drone",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/robots/robot_drone.png"
+  },
+  {
+   "id": "robot_security",
+   "family": "Robots",
+   "name": "Security Droid",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/robots/robot_security.png",
+   "weapon": "blaster",
+   "offhand": "energy_shield"
+  },
+  {
+   "id": "robot_sphere",
+   "family": "Robots",
+   "name": "Roller Bot",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/robots/robot_sphere.png"
+  },
+  {
+   "id": "robot_spider",
+   "family": "Robots",
+   "name": "Spider Bot",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/robots/robot_spider.png"
+  },
+  {
+   "id": "robot_turret",
+   "family": "Robots",
+   "name": "Sentry Turret",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/robots/robot_turret.png"
+  },
+  {
+   "id": "robot_worker",
+   "family": "Robots",
+   "name": "Worker Bot",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/robots/robot_worker.png",
+   "weapon": "wrench",
+   "offhand": null
+  },
+  {
+   "id": "alien_beetle",
+   "family": "Aliens",
+   "name": "Plasma Beetle",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/aliens/alien_beetle.png"
+  },
+  {
+   "id": "alien_blob",
+   "family": "Aliens",
+   "name": "Xeno Blob",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/aliens/alien_blob.png"
+  },
+  {
+   "id": "alien_crawler",
+   "family": "Aliens",
+   "name": "Xeno Crawler",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/aliens/alien_crawler.png"
+  },
+  {
+   "id": "alien_grey",
+   "family": "Aliens",
+   "name": "Grey",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/aliens/alien_grey.png",
+   "weapon": "scanner",
+   "offhand": null
+  },
+  {
+   "id": "alien_insectoid",
+   "family": "Aliens",
+   "name": "Insectoid Soldier",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/aliens/alien_insectoid.png",
+   "weapon": "spear",
+   "offhand": null
+  },
+  {
+   "id": "alien_jelly",
+   "family": "Aliens",
+   "name": "Sky Jelly",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/aliens/alien_jelly.png"
+  },
+  {
+   "id": "alien_psion",
+   "family": "Aliens",
+   "name": "Psion",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/aliens/alien_psion.png",
+   "weapon": "wand",
+   "offhand": null
+  },
+  {
+   "id": "alien_reptilian",
+   "family": "Aliens",
+   "name": "Reptilian Trooper",
+   "layout": "character",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/aliens/alien_reptilian.png",
+   "weapon": "blaster",
+   "offhand": null
+  },
+  {
+   "id": "shadow_bat",
+   "family": "Shadow Creatures",
+   "name": "Night Bat",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/shadow_creatures/shadow_bat.png"
+  },
+  {
+   "id": "shadow_crawler",
+   "family": "Shadow Creatures",
+   "name": "Void Crawler",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/shadow_creatures/shadow_crawler.png"
+  },
+  {
+   "id": "shadow_eye",
+   "family": "Shadow Creatures",
+   "name": "Gazer",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/shadow_creatures/shadow_eye.png"
+  },
+  {
+   "id": "shadow_hound",
+   "family": "Shadow Creatures",
+   "name": "Shadow Hound",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/shadow_creatures/shadow_hound.png"
+  },
+  {
+   "id": "shadow_reaper",
+   "family": "Shadow Creatures",
+   "name": "Reaper",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/shadow_creatures/shadow_reaper.png"
+  },
+  {
+   "id": "shadow_specter",
+   "family": "Shadow Creatures",
+   "name": "Specter",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/shadow_creatures/shadow_specter.png"
+  },
+  {
+   "id": "shadow_wisp",
+   "family": "Shadow Creatures",
+   "name": "Void Wisp",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/shadow_creatures/shadow_wisp.png"
+  },
+  {
+   "id": "shadow_wraith",
+   "family": "Shadow Creatures",
+   "name": "Wraith",
+   "layout": "creature",
+   "frame_size": [
+    32,
+    32
+   ],
+   "file": "monsters/shadow_creatures/shadow_wraith.png"
+  },
+  {
+   "id": "boss_elder_dragon",
+   "family": "Bosses",
+   "name": "Elder Dragon",
+   "layout": "creature",
+   "frame_size": [
+    64,
+    64
+   ],
+   "file": "monsters/bosses/boss_elder_dragon.png"
+  },
+  {
+   "id": "boss_frost_wyrm",
+   "family": "Bosses",
+   "name": "Frost Wyrm",
+   "layout": "creature",
+   "frame_size": [
+    64,
+    64
+   ],
+   "file": "monsters/bosses/boss_frost_wyrm.png"
+  },
+  {
+   "id": "boss_lich_king",
+   "family": "Bosses",
+   "name": "Lich King",
+   "layout": "creature",
+   "frame_size": [
+    64,
+    64
+   ],
+   "file": "monsters/bosses/boss_lich_king.png"
+  },
+  {
+   "id": "boss_mech_titan",
+   "family": "Bosses",
+   "name": "Mech Titan",
+   "layout": "creature",
+   "frame_size": [
+    64,
+    64
+   ],
+   "file": "monsters/bosses/boss_mech_titan.png"
+  },
+  {
+   "id": "boss_overmind",
+   "family": "Bosses",
+   "name": "Alien Overmind",
+   "layout": "creature",
+   "frame_size": [
+    64,
+    64
+   ],
+   "file": "monsters/bosses/boss_overmind.png"
+  },
+  {
+   "id": "boss_shadow_lord",
+   "family": "Bosses",
+   "name": "Shadow Lord",
+   "layout": "creature",
+   "frame_size": [
+    64,
+    64
+   ],
+   "file": "monsters/bosses/boss_shadow_lord.png"
+  },
+  {
+   "id": "boss_slime_king",
+   "family": "Bosses",
+   "name": "Slime King",
+   "layout": "creature",
+   "frame_size": [
+    64,
+    64
+   ],
+   "file": "monsters/bosses/boss_slime_king.png"
+  },
+  {
+   "id": "boss_stone_golem",
+   "family": "Bosses",
+   "name": "Stone Golem",
+   "layout": "creature",
+   "frame_size": [
+    64,
+    64
+   ],
+   "file": "monsters/bosses/boss_stone_golem.png"
+  }
+ ]
+}

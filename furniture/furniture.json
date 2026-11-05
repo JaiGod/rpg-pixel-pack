@@ -1,0 +1,1804 @@
+{
+ "items": [
+  {
+   "id": "table_wood",
+   "category": "tables",
+   "name": "Wooden Table",
+   "file": "furniture/tables/table_wood.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "table_round",
+   "category": "tables",
+   "name": "Round Table",
+   "file": "furniture/tables/table_round.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "table_long",
+   "category": "tables",
+   "name": "Long Dining Table",
+   "file": "furniture/tables/table_long.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "table_tavern",
+   "category": "tables",
+   "name": "Tavern Table",
+   "file": "furniture/tables/table_tavern.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "table_stone",
+   "category": "tables",
+   "name": "Stone Table",
+   "file": "furniture/tables/table_stone.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "table_desk",
+   "category": "tables",
+   "name": "Writing Desk",
+   "file": "furniture/tables/table_desk.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "table_lab",
+   "category": "tables",
+   "name": "Lab Bench",
+   "file": "furniture/tables/table_lab.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "table_alchemy",
+   "category": "tables",
+   "name": "Alchemy Table",
+   "file": "furniture/tables/table_alchemy.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "table_banquet",
+   "category": "tables",
+   "name": "Royal Banquet Table",
+   "file": "furniture/tables/table_banquet.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "bed_single_red",
+   "category": "beds",
+   "name": "Single Bed (Red)",
+   "file": "furniture/beds/bed_single_red.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "bed_single_blue",
+   "category": "beds",
+   "name": "Single Bed (Blue)",
+   "file": "furniture/beds/bed_single_blue.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "bed_single_green",
+   "category": "beds",
+   "name": "Single Bed (Green)",
+   "file": "furniture/beds/bed_single_green.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "bed_double",
+   "category": "beds",
+   "name": "Double Bed",
+   "file": "furniture/beds/bed_double.png",
+   "size": [
+    64,
+    64
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "bed_royal",
+   "category": "beds",
+   "name": "Royal Canopy Bed",
+   "file": "furniture/beds/bed_royal.png",
+   "size": [
+    64,
+    64
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "bed_straw",
+   "category": "beds",
+   "name": "Straw Bed",
+   "file": "furniture/beds/bed_straw.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "bed_medical",
+   "category": "beds",
+   "name": "Medical Bed",
+   "file": "furniture/beds/bed_medical.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "bed_cryopod",
+   "category": "beds",
+   "name": "Cryo Sleep Pod",
+   "file": "furniture/beds/bed_cryopod.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "bed_hammock",
+   "category": "beds",
+   "name": "Hammock",
+   "file": "furniture/beds/bed_hammock.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chair_wood",
+   "category": "chairs",
+   "name": "Wooden Chair",
+   "file": "furniture/chairs/chair_wood.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chair_cushion",
+   "category": "chairs",
+   "name": "Cushioned Chair",
+   "file": "furniture/chairs/chair_cushion.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chair_stool",
+   "category": "chairs",
+   "name": "Stool",
+   "file": "furniture/chairs/chair_stool.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chair_bench",
+   "category": "chairs",
+   "name": "Bench",
+   "file": "furniture/chairs/chair_bench.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chair_throne",
+   "category": "chairs",
+   "name": "Throne",
+   "file": "furniture/chairs/chair_throne.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chair_armchair",
+   "category": "chairs",
+   "name": "Armchair",
+   "file": "furniture/chairs/chair_armchair.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chair_office",
+   "category": "chairs",
+   "name": "Office Chair",
+   "file": "furniture/chairs/chair_office.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chair_scifi",
+   "category": "chairs",
+   "name": "Bridge Seat",
+   "file": "furniture/chairs/chair_scifi.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "couch_red",
+   "category": "chairs",
+   "name": "Sofa (Red)",
+   "file": "furniture/chairs/couch_red.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "couch_blue",
+   "category": "chairs",
+   "name": "Sofa (Navy)",
+   "file": "furniture/chairs/couch_blue.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "shelf_books",
+   "category": "shelves",
+   "name": "Bookshelf",
+   "file": "furniture/shelves/shelf_books.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "shelf_books_dark",
+   "category": "shelves",
+   "name": "Library Shelf",
+   "file": "furniture/shelves/shelf_books_dark.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "shelf_potions",
+   "category": "shelves",
+   "name": "Potion Shelf",
+   "file": "furniture/shelves/shelf_potions.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "shelf_pantry",
+   "category": "shelves",
+   "name": "Pantry Shelf",
+   "file": "furniture/shelves/shelf_pantry.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "shelf_display",
+   "category": "shelves",
+   "name": "Display Case",
+   "file": "furniture/shelves/shelf_display.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "shelf_server",
+   "category": "shelves",
+   "name": "Server Rack",
+   "file": "furniture/shelves/shelf_server.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "shelf_low_books",
+   "category": "shelves",
+   "name": "Low Bookcase",
+   "file": "furniture/shelves/shelf_low_books.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "rack_weapons",
+   "category": "shelves",
+   "name": "Weapon Rack",
+   "file": "furniture/shelves/rack_weapons.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "rack_armor",
+   "category": "shelves",
+   "name": "Armor Stand",
+   "file": "furniture/shelves/rack_armor.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "wardrobe_wood",
+   "category": "shelves",
+   "name": "Wardrobe",
+   "file": "furniture/shelves/wardrobe_wood.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "dresser_wood",
+   "category": "shelves",
+   "name": "Dresser",
+   "file": "furniture/shelves/dresser_wood.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "fridge_scifi",
+   "category": "shelves",
+   "name": "Cryo Fridge",
+   "file": "furniture/shelves/fridge_scifi.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "crate_wood",
+   "category": "crates",
+   "name": "Wooden Crate",
+   "file": "furniture/crates/crate_wood.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "crate_reinforced",
+   "category": "crates",
+   "name": "Reinforced Crate",
+   "file": "furniture/crates/crate_reinforced.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "crate_apples",
+   "category": "crates",
+   "name": "Apple Crate",
+   "file": "furniture/crates/crate_apples.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "crate_fish",
+   "category": "crates",
+   "name": "Fish Crate",
+   "file": "furniture/crates/crate_fish.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "crate_tech",
+   "category": "crates",
+   "name": "Supply Crate",
+   "file": "furniture/crates/crate_tech.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "crate_cargo",
+   "category": "crates",
+   "name": "Cargo Container",
+   "file": "furniture/crates/crate_cargo.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "crate_stack",
+   "category": "crates",
+   "name": "Crate Stack",
+   "file": "furniture/crates/crate_stack.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "barrel_wood",
+   "category": "barrels",
+   "name": "Barrel",
+   "file": "furniture/barrels/barrel_wood.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "barrel_water",
+   "category": "barrels",
+   "name": "Water Barrel",
+   "file": "furniture/barrels/barrel_water.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "barrel_open",
+   "category": "barrels",
+   "name": "Pickle Barrel",
+   "file": "furniture/barrels/barrel_open.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "barrel_keg",
+   "category": "barrels",
+   "name": "Ale Keg",
+   "file": "furniture/barrels/barrel_keg.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "barrel_oil",
+   "category": "barrels",
+   "name": "Oil Drum",
+   "file": "furniture/barrels/barrel_oil.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "barrel_toxic",
+   "category": "barrels",
+   "name": "Toxic Barrel",
+   "file": "furniture/barrels/barrel_toxic.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "barrel_fire",
+   "category": "barrels",
+   "name": "Burning Drum",
+   "file": "furniture/barrels/barrel_fire.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "computer_crt",
+   "category": "computers",
+   "name": "CRT Computer Desk",
+   "file": "furniture/computers/computer_crt.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "computer_terminal",
+   "category": "computers",
+   "name": "Data Terminal",
+   "file": "furniture/computers/computer_terminal.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "computer_laptop",
+   "category": "computers",
+   "name": "Laptop Desk",
+   "file": "furniture/computers/computer_laptop.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "computer_retro",
+   "category": "computers",
+   "name": "Retro Computer",
+   "file": "furniture/computers/computer_retro.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "computer_holo_desk",
+   "category": "computers",
+   "name": "Holo Desk",
+   "file": "furniture/computers/computer_holo_desk.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "computer_workstation",
+   "category": "computers",
+   "name": "Triple-Screen Workstation",
+   "file": "furniture/computers/computer_workstation.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "console_control",
+   "category": "consoles",
+   "name": "Control Console",
+   "file": "furniture/consoles/console_control.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "console_nav",
+   "category": "consoles",
+   "name": "Navigation Console",
+   "file": "furniture/consoles/console_nav.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "console_reactor",
+   "category": "consoles",
+   "name": "Reactor Core",
+   "file": "furniture/consoles/console_reactor.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "console_wall_panel",
+   "category": "consoles",
+   "name": "Wall Panel",
+   "file": "furniture/consoles/console_wall_panel.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "console_hologram",
+   "category": "consoles",
+   "name": "Hologram Projector",
+   "file": "furniture/consoles/console_hologram.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "console_comms",
+   "category": "consoles",
+   "name": "Comms Array",
+   "file": "furniture/consoles/console_comms.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "plant_bush",
+   "category": "decorations",
+   "name": "Potted Bush",
+   "file": "furniture/decorations/plant_bush.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "plant_flowers",
+   "category": "decorations",
+   "name": "Flower Pot",
+   "file": "furniture/decorations/plant_flowers.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "plant_cactus",
+   "category": "decorations",
+   "name": "Potted Cactus",
+   "file": "furniture/decorations/plant_cactus.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "plant_fern",
+   "category": "decorations",
+   "name": "Fern",
+   "file": "furniture/decorations/plant_fern.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "plant_alien",
+   "category": "decorations",
+   "name": "Alien Plant",
+   "file": "furniture/decorations/plant_alien.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "rug_red",
+   "category": "decorations",
+   "name": "Red Carpet",
+   "file": "furniture/decorations/rug_red.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "rug_blue",
+   "category": "decorations",
+   "name": "Blue Rug",
+   "file": "furniture/decorations/rug_blue.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "rug_round",
+   "category": "decorations",
+   "name": "Round Rug",
+   "file": "furniture/decorations/rug_round.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "rug_fur",
+   "category": "decorations",
+   "name": "Fur Rug",
+   "file": "furniture/decorations/rug_fur.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "rug_royal",
+   "category": "decorations",
+   "name": "Royal Runner",
+   "file": "furniture/decorations/rug_royal.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "painting_landscape",
+   "category": "decorations",
+   "name": "Landscape Painting",
+   "file": "furniture/decorations/painting_landscape.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "painting_portrait",
+   "category": "decorations",
+   "name": "Portrait",
+   "file": "furniture/decorations/painting_portrait.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "banner_red",
+   "category": "decorations",
+   "name": "Red Banner",
+   "file": "furniture/decorations/banner_red.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "banner_blue",
+   "category": "decorations",
+   "name": "Blue Banner",
+   "file": "furniture/decorations/banner_blue.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "banner_green",
+   "category": "decorations",
+   "name": "Green Banner",
+   "file": "furniture/decorations/banner_green.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "wall_clock",
+   "category": "decorations",
+   "name": "Wall Clock",
+   "file": "furniture/decorations/wall_clock.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "wall_mirror",
+   "category": "decorations",
+   "name": "Mirror",
+   "file": "furniture/decorations/wall_mirror.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "wall_trophy",
+   "category": "decorations",
+   "name": "Antler Trophy",
+   "file": "furniture/decorations/wall_trophy.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "wall_window",
+   "category": "decorations",
+   "name": "Window",
+   "file": "furniture/decorations/wall_window.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "wall_neon_sign",
+   "category": "decorations",
+   "name": "Neon Sign",
+   "file": "furniture/decorations/wall_neon_sign.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chest_wood",
+   "category": "decorations",
+   "name": "Wooden Chest",
+   "file": "furniture/decorations/chest_wood.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chest_gold",
+   "category": "decorations",
+   "name": "Treasure Chest",
+   "file": "furniture/decorations/chest_gold.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "chest_locker",
+   "category": "decorations",
+   "name": "Tech Locker",
+   "file": "furniture/decorations/chest_locker.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "candelabra",
+   "category": "decorations",
+   "name": "Candelabra",
+   "file": "furniture/decorations/candelabra.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "candles",
+   "category": "decorations",
+   "name": "Candle Cluster",
+   "file": "furniture/decorations/candles.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "vase_blue",
+   "category": "decorations",
+   "name": "Porcelain Vase",
+   "file": "furniture/decorations/vase_blue.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "vase_amphora",
+   "category": "decorations",
+   "name": "Amphora",
+   "file": "furniture/decorations/vase_amphora.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "stove_iron",
+   "category": "decorations",
+   "name": "Iron Stove",
+   "file": "furniture/decorations/stove_iron.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "fireplace",
+   "category": "decorations",
+   "name": "Fireplace",
+   "file": "furniture/decorations/fireplace.png",
+   "size": [
+    64,
+    64
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "anvil",
+   "category": "decorations",
+   "name": "Anvil",
+   "file": "furniture/decorations/anvil.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "cauldron",
+   "category": "decorations",
+   "name": "Cauldron",
+   "file": "furniture/decorations/cauldron.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "sack",
+   "category": "decorations",
+   "name": "Sack",
+   "file": "furniture/decorations/sack.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "grain_sacks",
+   "category": "decorations",
+   "name": "Grain Sacks",
+   "file": "furniture/decorations/grain_sacks.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "hay_bale",
+   "category": "decorations",
+   "name": "Hay Bale",
+   "file": "furniture/decorations/hay_bale.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "firewood",
+   "category": "decorations",
+   "name": "Firewood Pile",
+   "file": "furniture/decorations/firewood.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "grandfather_clock",
+   "category": "decorations",
+   "name": "Grandfather Clock",
+   "file": "furniture/decorations/grandfather_clock.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "statue_hero",
+   "category": "decorations",
+   "name": "Hero Statue",
+   "file": "furniture/decorations/statue_hero.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "pillar_stone",
+   "category": "decorations",
+   "name": "Stone Pillar",
+   "file": "furniture/decorations/pillar_stone.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "fountain",
+   "category": "decorations",
+   "name": "Fountain",
+   "file": "furniture/decorations/fountain.png",
+   "size": [
+    64,
+    64
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "specimen_tank",
+   "category": "decorations",
+   "name": "Specimen Tank",
+   "file": "furniture/decorations/specimen_tank.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "vending_machine",
+   "category": "decorations",
+   "name": "Vending Machine",
+   "file": "furniture/decorations/vending_machine.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "arcade_cabinet",
+   "category": "decorations",
+   "name": "Arcade Cabinet",
+   "file": "furniture/decorations/arcade_cabinet.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "tv_set",
+   "category": "decorations",
+   "name": "TV Set",
+   "file": "furniture/decorations/tv_set.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "piano",
+   "category": "decorations",
+   "name": "Piano",
+   "file": "furniture/decorations/piano.png",
+   "size": [
+    64,
+    32
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "globe",
+   "category": "decorations",
+   "name": "Globe",
+   "file": "furniture/decorations/globe.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "telescope",
+   "category": "decorations",
+   "name": "Telescope",
+   "file": "furniture/decorations/telescope.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "lamp_post",
+   "category": "decorations",
+   "name": "Street Lamp",
+   "file": "furniture/decorations/lamp_post.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "floor_lamp",
+   "category": "decorations",
+   "name": "Floor Lamp",
+   "file": "furniture/decorations/floor_lamp.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "neon_lamp",
+   "category": "decorations",
+   "name": "Neon Lamp",
+   "file": "furniture/decorations/neon_lamp.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "coat_rack",
+   "category": "decorations",
+   "name": "Coat Rack",
+   "file": "furniture/decorations/coat_rack.png",
+   "size": [
+    32,
+    64
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "trash_bin",
+   "category": "decorations",
+   "name": "Trash Bin",
+   "file": "furniture/decorations/trash_bin.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "book_stack",
+   "category": "decorations",
+   "name": "Book Stack",
+   "file": "furniture/decorations/book_stack.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "scroll_table",
+   "category": "decorations",
+   "name": "Scroll Table",
+   "file": "furniture/decorations/scroll_table.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  },
+  {
+   "id": "well",
+   "category": "decorations",
+   "name": "Well",
+   "file": "furniture/decorations/well.png",
+   "size": [
+    32,
+    32
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "origin": "bottom-left tile"
+  }
+ ]
+}

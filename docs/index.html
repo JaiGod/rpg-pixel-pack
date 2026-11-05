@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RPG Pixel Pack — Play &amp; Explore</title>
+<meta name="description" content="Open-source 32x32 pixel-art RPG content pack for Godot 4: 52 layered characters, 76 monsters, 11 biome tilesets, 40 buildings, 35 interiors, 120 furniture pieces. Play the demo in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="pack/equipment/swords/sword_steel.png">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#play"><img src="pack/equipment/swords/sword_flame.png" alt=""> RPG PIXEL PACK</a>
+  <nav>
+    <a href="#play" data-tab="play">Play</a>
+    <a href="#creator" data-tab="creator">Character Creator</a>
+    <a href="#gallery" data-tab="gallery">Gallery</a>
+    <a href="#get" data-tab="get">Get the Pack</a>
+  </nav>
+</header>
+
+<main>
+  <section id="play" class="tab">
+    <div class="intro">
+      <h1>A complete 32×32 RPG content pack for Godot&nbsp;4</h1>
+      <p>Everything on this page is drawn from the open-source pack — walk around the village, talk to villagers, fight slimes.</p>
+      <div id="stats" class="stats"></div>
+    </div>
+    <div class="game-wrap">
+      <canvas id="game" width="640" height="360" tabindex="0" aria-label="Playable village demo"></canvas>
+      <div class="game-overlay" id="gameStart"><button id="startBtn" class="big">▶ Click to play</button><p>WASD / arrows move · Shift run · Space attack · E talk</p></div>
+      <div class="touch" id="touch">
+        <div class="dpad">
+          <button data-k="up">▲</button><button data-k="left">◀</button><button data-k="right">▶</button><button data-k="down">▼</button>
+        </div>
+        <div class="ab"><button data-k="talk">E</button><button data-k="attack">⚔</button></div>
+      </div>
+    </div>
+    <p class="hint">Keyboard: <kbd>W A S D</kbd> move · <kbd>Shift</kbd> run · <kbd>Space</kbd> attack · <kbd>E</kbd> talk · <kbd>R</kbd> restart</p>
+  </section>
+
+  <section id="creator" class="tab" hidden>
+    <h2>Character Creator</h2>
+    <p class="lead">Every option below is a separate layer sheet in the pack. Tint channels use the palette-swap system (the same one the Godot shader uses).</p>
+    <div class="creator">
+      <div class="controls" id="controls"></div>
+      <div class="preview">
+        <canvas id="preview" width="192" height="192"></canvas>
+        <div class="row" id="animBtns"></div>
+        <div class="row" id="dirBtns"></div>
+        <div class="row">
+          <button id="randomBtn">🎲 Randomize</button>
+          <button id="downloadBtn">⬇ Download sprite sheet</button>
+        </div>
+        <p class="small">The download is a full 192×576 sheet (18 animations) ready for Godot's AnimatedSprite2D.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="tab" hidden>
+    <h2>Monsters</h2>
+    <p class="lead">Animations cycle idle → move → attack → hurt → death.</p>
+    <div id="monsterGrid" class="mgrid"></div>
+    <h2>Environmental animations</h2>
+    <div id="animGrid" class="mgrid"></div>
+    <h2>Galleries</h2>
+    <div class="shots" id="shots"></div>
+  </section>
+
+  <section id="get" class="tab" hidden>
+    <h2>Get the pack</h2>
+    <div class="cards">
+      <a class="card" id="repoLink" href="#"><b>GitHub repository</b><span>Source, PNGs, Godot project, docs</span></a>
+      <a class="card" id="releaseLink" href="#"><b>Download v1.0</b><span>Release zip with everything</span></a>
+      <a class="card" id="docsLink" href="#"><b>Godot setup guide</b><span>Install, TileMaps, characters, inventory</span></a>
+    </div>
+    <h3>What's inside</h3>
+    <ul class="inside" id="inside"></ul>
+    <p class="small">Art: CC0 1.0 (public domain) · Code: MIT. Made with ♥ by Jaineil Rana (JaKing).</p>
+  </section>
+</main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
